@@ -1,0 +1,3 @@
+[submodule "myqlm-notebooks"]
+	path = myqlm-notebooks
+	url = git@github.com:myQLM/myqlm-notebooks.git

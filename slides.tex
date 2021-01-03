@@ -12,6 +12,7 @@
 \begin{document}
 \frame{\titlepage}
 
+
 \begin{frame}
 \frametitle{prequisite: quantum circuits}
 
@@ -34,20 +35,50 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{quantum phase estimation: original form}
+\frametitle{Quantum simulation: general motivation}
+
+\begin{itemize}
+\item Efficient numerical simulation quantum phenomena on classical machines seems hard~\textcolor{blue}{\cite{feynman1982simulating}}.
+\item Therefore quantum machines might be able to perform classically-intractable computation\footnote{basic motivation behind quantum computing research}
+\item And in particular they should be good at simulating quantum phenomena (e.g simulating QCD, solving condensed-matter problems, computing molecular energies etc.) 
+\end{itemize}
+---\\
+$\quad\rightarrow$ But in practice, how would that work ? What \textbf{quantum circuits} would I run on my hypothetical
+quantum computers to solve these problems ?\\~\\
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Quantum Simulation: more precisely}
+
+Most of the time in the potential applications I mentioned (particle phycics, condensed matter, chemistry),
+the computation consists in \textbf{diagonalizing Hamiltonians} and in particular find their \textbf{ground
+state energy}.\\~\\
+You will see in these practical quantum programming sessions the two main frameworks for doing so on a quantum computer:
+\begin{itemize}
+\item \textbf{phase estimation} (this week)
+\item \textbf{variational algorithms} (next week, in a slightly more ``combinatorial optimization''-oriented context)
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{This week's answer: quantum phase estimation}
 \begin{center}
 \begin{figure}
 \includegraphics[width=\textwidth]{quantum_phase_estimation.eps}
 \end{figure}
 \end{center}
 
-With $|\psi\rangle$ \textbf{eigenvector} of $U$ with \textbf{eigenvalue} $e^{-2i\pi\phi}$,\\~\\
+With $|\psi\rangle$ \textbf{eigenvector} of $U$ with \textbf{eigenvalue} $e^{-2i\pi\phi}$,\\
  ($U|\psi\rangle = e^{-2i\pi\phi}|\psi\rangle$, $0\leq\phi<1$)\\~\\
 The circuit above allows to compute the $n_{B}$ most significant bits of $\phi$ in a \textbf{binary
 decomposition}.\\~\\
 
-\textbf{Template} for \emph{all} quantum algorithms with \textbf{exponential speedup}.\\
-(i.e with quantum circuits of \textbf{polynomial} size for classically-intractable problems)
+\textbf{Template} for \emph{all} quantum algorithms with \textbf{exponential speedup}, both in quantum simulation
+and other application contexts.\\
 \end{frame}
 
 \begin{frame}
@@ -87,9 +118,10 @@ $\underset{RZ(\phi_{k})}{\hookrightarrow} \left(\frac{|0\rangle+e^{-2i\pi\cdot 0
 \end{frame}
 
 \begin{frame}
-\frametitle{Our use-case: ground state energy calculation}
-Given $\mathcal{H}$, Hamiltonian of target system (e.g a molecule), we want to compute its ground state energy.\\~\\
-Actually, usually $\mathcal{H}$ depends on some structural/geometric parameters (e.g $H_{2}$ dissociation curve). The purpose
+\frametitle{Our example: molecular ground state energy calculation}
+\textbf{General problem:} Given $\mathcal{H}$, electronic structure Hamiltonian of a molecule, 
+we want to compute its ground state energy.\\~\\
+Actually, usually $\mathcal{H}$ depends on some structural/geometric parameters. The purpose
 is then to compute a \emph{ground state energy landscape} as a function of these parameters. May provide insight on reaction mechanisms
 \footnote{Potential futuristic applications: $CO_{2}$ capture 
 \textcolor{blue}{\cite{von2020quantum}}, $H_{2}O$ cracking...}.
@@ -101,7 +133,8 @@ is then to compute a \emph{ground state energy landscape} as a function of these
 \end{tikzpicture}
 \end{center}
 
-From \textcolor{blue}{\cite{o2016scalable}}. This is what we will reproduce today.
+\textbf{Our instance:} $H_{2}$ and its dissociation curve.
+We will use data from \textcolor{blue}{\cite{o2016scalable}}, where they solve it on an actual small quantum chip. 
 \end{frame}
 
 \begin{frame}
@@ -166,7 +199,8 @@ What you need to know:
 \begin{itemize}
 \item quantum circuits are first written as \textbf{Program} and then exported as \textbf{circuit}.
 \item A \textbf{job} is created from a circuit and sent to a \textbf{qpu} (a simulator)
-\item \textbf{AbstractGates} will come handy in programming Hamiltonian simulation.
+\item \textbf{AbstractGates} allow to define custom parameterized gates. They will come handy in programming Hamiltonian simulation.
+\item \textbf{QRoutines} allow to program arbitrary parametrized sub-circuits, which are then pluggable anywhere into a larger circuit.
 \item see the minimal notebook and \textcolor{blue}{\href{https://myqlm.github.io/}{https://myqlm.github.io/}} for more details
 \end{itemize}
 
