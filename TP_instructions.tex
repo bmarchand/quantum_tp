@@ -2,6 +2,7 @@
 
 \usepackage{graphicx}
 \usepackage{xcolor}
+\usepackage{hyperref}
 \usepackage{amsmath}
 
 \title{Quantum computing TP\\ Phase estimation for chemistry}
@@ -13,8 +14,8 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-You need to fill up the helper file and some notebook cells according to the questions.
-Send the notebooks and helper files in a zip by *** 2021. They will be corrected and graded
+You need to fill up some notebook cells with your implementation according to the questions.
+Send the notebooks and helper files in a zip by next Thursday, Janurary 14 2021. They will be corrected and graded.
 \end{abstract}
 
 \section{Quantum Programming Basics}
@@ -28,7 +29,8 @@ Send the notebooks and helper files in a zip by *** 2021. They will be corrected
 Where $ham\_X(\theta) = e^{-i\theta X}$ with $X=\begin{pmatrix}0 & 1 \\ 1 & 0\end{pmatrix}$
 
 \paragraph{Hint} Define $ham\_X$ as an ``AbstractGate'', then apply it using ``.ctrl()'' to get a controlled version, as suggested in 
-the ``minimal notebook''.
+the ``minimal notebook''. Don't hesitate to also refer to the slides that were sent to you, for instance for the definition of what
+a controlled gate is.
 
 \section{Iterative quantum phase estimation, reproducing results from \textcolor{blue}{\cite{o2016scalable}}}
 
@@ -77,17 +79,18 @@ i.e:
 where $e^{-iZdt} = \begin{pmatrix} e^{-idt} & 0 \\ 0 & e^{idt} \end{pmatrix} = RZ(-dt)$.
 
 \paragraph{} $RZ$ is a ``standard gate'', pre-implemented in PyAQASM.
-Likewise, $RX$ and $RY$ are pre-implemented.
+Likewise, $RX(\theta) = e^{i\theta X}$ and $RY(\theta)=e^{i\theta Y}$ are pre-implemented. You can look at their precise definitions
+\textcolor{blue}{\href{https://myqlm.github.io/aqasm.html\#aqasm}{here}}.
 
 \paragraph{Question 2} Following the example above, which is already implemented in the notebook, and knowing in addition that:
 $$ X\otimes X = CNOT_{0\rightarrow 1} \cdot X\otimes I \cdot 
 CNOT_{0\rightarrow 1}  $$
-$$ SXS^{\dagger} = Y $$ and 
+$$ SXS^{\dagger} = Y $$ with $S=\begin{pmatrix}1 & 0 \\ 0 & i \end{pmatrix}$ \\and 
 $$ Y\otimes X = CNOT_{0\rightarrow 1} \cdot Y\otimes I \cdot 
 CNOT_{0\rightarrow 1} $$
 write down the QRoutines carrying out each of the required 
 Hamiltonian simulations, by filling the templates already written
-in the notebook.
+in the notebook. 
 
 \subsection{Iterative Phase estimation}
 
@@ -98,11 +101,24 @@ coefficients, an interval of time $dt$,  and a Trotter number $p$,
 and returning a Qroutine which implements the corresponding
 Trotterized implementation of the Hamiltonian.
 
-Below where your implementation should go, a cell contains
-a piece of code that tests whether the Trotterization produces
-a ``reasonable'' implementation of the Hamiltonian.
+We recall that Trotterization consists in approximating $e^{-idt\left(\sum_{l}c_{l}H_{l}\right)}$ as
+$\left(\prod_{l}e^{-i\frac{dt c_{l} H_{l}}{p}}\right)^{p}$. Therefore, your Qroutine should make use of
+the other Qroutines you implemented in Question 2. As for the coefficients weighting the influence
+of each individual terms, they are available in the list of dictionaries loaded at the beginning
+of the notebook, from {\fontfamily{lmr}\selectfont hamiltonian\_data.json}. As specified in the notebook,
+your function should also take an "energy shift" as input parameter. It consists in adding a $+shift\cdot I$
+term to your Hamiltonian. We will use it to ensure the energies we compute are $>0$. Take a look at the 
+slides for more explanations.
+
+\subsubsection{Iterative Phase estimation}
+
+\paragraph{Question 4} Implement iterative phase estimation following the template provided in the notebook, 
+and the definitions given in the slides.
 
 \subsection{final plots}
+
+\paragraph{Question 5} Run the computations, convert the computed phases to energies, and plot the final result.
+
 \bibliography{biblio}
 \bibliographystyle{unsrt}
 \end{document}
