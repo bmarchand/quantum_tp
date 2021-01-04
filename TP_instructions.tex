@@ -115,9 +115,24 @@ slides for more explanations.
 \paragraph{Question 4} Implement iterative phase estimation following the template provided in the notebook, 
 and the definitions given in the slides.
 
+In a few words, you need to loop over $k=n_{B},...,1$ in that order, and for each of these values:
+\begin{itemize}
+\item Produce the circuit displayed on the slides. Depending on the value of the ``trotterization'' Boolean
+flag, the Hamiltonian simulation can either be the ideal ``cheat mode'' version that exponentiates the Hamiltonian,
+or the Trotterized version you implemented. In place of ``$|\psi\rangle$'', the ground state of the Hamiltonian,
+we will use a simple ansatz, the Hartree-Fock approximation to our problem: $|01\rangle$, as suggested in
+\textcolor{blue}{\cite{o2016scalable}}, and explained in the slides.
+\item simulate the circuit, specifying at job creation that you are interested in the first qubit only, and 
+select the most probable result\footnote{Of course in a real setting we would have to run the circuit many times
+to estimate the probabilities, here, we compute them numerically.}.
+\end{itemize}
+
 \subsection{final plots}
 
-\paragraph{Question 5} Run the computations, convert the computed phases to energies, and plot the final result.
+\paragraph{Question 5} The cells actually computing the curves are already written, for the most part. The only
+thing you need to fill is the conversion of phases back to energies. Put your implementation where indicated and produce the plots.
+The ``ideal'' result should be a smooth $H_{2}$ dissociation curve, while the Trotterized version should be more ``wiggly'',
+the curve with $p=10$ being a closer approximation to the ideal curve, as expected.
 
 \bibliography{biblio}
 \bibliographystyle{unsrt}

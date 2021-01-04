@@ -56,8 +56,8 @@ the computation consists in \textbf{diagonalizing Hamiltonians} and in particula
 state energy}.\\~\\
 You will see in these practical quantum programming sessions the two main frameworks for doing so on a quantum computer:
 \begin{itemize}
-\item \textbf{phase estimation} (this week)
-\item \textbf{variational algorithms} (next week, in a slightly more ``combinatorial optimization''-oriented context)
+\item \textbf{phase estimation} (this week) $\rightarrow$ the ``classic guaranteed-speedup quantum algorithmics approach''.
+\item \textbf{variational quantum algorithms} \textcolor{blue}{\cite{cerezo2020variational}} (next week, in a slightly more ``combinatorial optimization''-oriented context) $\rightarrow$ the ``more recent, empirical, practical approach''. 
 \end{itemize}
 
 \end{frame}
@@ -89,10 +89,11 @@ and other application contexts.\\
 \item[1.] compute $\phi_{k}=\sum_{l=k+1}^{n_{B}} \frac{b_{l}}{2^{l-k+1}}$
 \item[2.] execute the following circuit: 
 \end{itemize}
-}
 \begin{figure}
 \includegraphics[width=.6\textwidth]{iterative_pea.eps}
 \end{figure}~\\
+$\quad$which yields $b_{k}$.\\~\\
+}
 
 With $H=\frac{1}{\sqrt{2}}\begin{pmatrix}1 & 1 \\ 1 & -1 \end{pmatrix}$ and 
 $RZ(\phi_{k})=\begin{pmatrix} 1 & 0 \\ 0 & e^{i\phi_{k}}\end{pmatrix}$
@@ -105,8 +106,9 @@ $RZ(\phi_{k})=\begin{pmatrix} 1 & 0 \\ 0 & e^{i\phi_{k}}\end{pmatrix}$
 \includegraphics[width=.6\textwidth]{iterative_pea.eps}
 \end{figure}
 \end{center}
-Recall that $\phi=0.b_{1}\cdots b_{n_{B}}$ in binary decomposition 
-and $\phi_{k}=\sum_{l=k+1}^{n_{B}} \frac{b_{l}}{2^{l-k+1}}=0.0b_{k+1}\cdots b_{n_{B}}$.\\~\\
+Recall that $\phi=0.b_{1}\cdots b_{n_{B}}$ in binary decomposition,
+$\phi_{k}=\sum_{l=k+1}^{n_{B}} \frac{b_{l}}{2^{l-k+1}}=0.0b_{k+1}\cdots b_{n_{B}}$
+and $U|\psi\rangle=e^{-2i\pi\phi}|\psi\rangle$.\\~\\
 \textbf{Evolution of the system:}\\~\\
 $|0\rangle|\psi\rangle \underset{H}{\rightarrow} \left(\frac{|0\rangle+|1\rangle}{\sqrt{2}}\right)|\psi\rangle=
 \left(\frac{|0\rangle|\psi\rangle+|1\rangle|\psi\rangle}{\sqrt{2}}\right)$\\~\\
@@ -162,7 +164,8 @@ Then $\mathcal{H}\leftarrow \mathcal{H}-E_{min}\cdot I$ ensures $E>0$ and choosi
 \begin{frame}
 \frametitle{Other problems}
 \textbf{Problem 2} In general we do not have access to the ground state.\\$\quad\rightarrow$use an \textbf{ansatz}\footnote{easy-to-prepare approximation} 
-with theoretical good overlap with ground state.\\~\\
+with theoretical good overlap with ground state. As suggested in \textcolor{blue}{\cite{o2016scalable}}, we will
+use here the Hartree-Fock approxiamtion to our problem, namely $|01\rangle=I\otimes X |00\rangle$\\~\\
 
 \textbf{Problem 3} How do we implement $U^{2^{k}} = e^{-i\mathcal{H}2^{k}dt}$ ?\\
 $\quad\rightarrow$ usually $\mathcal{H}$ comes as a sum of simpler terms $\sum_{l} \mathcal{H}_{l}$\\
