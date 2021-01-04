@@ -5,7 +5,7 @@
 \usepackage{hyperref}
 \usepackage{amsmath}
 
-\title{Quantum computing TP\\ Phase estimation for chemistry}
+\title{Quantum computing TP\\ Phase estimation for quantum chemistry}
 
 
 \author{\textbf{Supervisor:} Bertrand Marchand}
@@ -76,10 +76,11 @@ i.e:
 \end{center}
 
 
-where $e^{-iZdt} = \begin{pmatrix} e^{-idt} & 0 \\ 0 & e^{idt} \end{pmatrix} = RZ(-dt)$.
+where $e^{-iZdt} = \begin{pmatrix} e^{-idt} & 0 \\ 0 & e^{idt} \end{pmatrix} = RZ(2*dt)$.
 
-\paragraph{} $RZ$ is a ``standard gate'', pre-implemented in PyAQASM.
-Likewise, $RX(\theta) = e^{i\theta X}$ and $RY(\theta)=e^{i\theta Y}$ are pre-implemented. You can look at their precise definitions
+\paragraph{} $RZ$ is a ``standard gate'', pre-implemented in PyAQASM, defined as $RZ(\theta)=e^{-i\frac{\theta Z}{2}}$.
+Likewise, $RX(\theta) = e^{-i\frac{\theta X}{2}}$ and 
+$RY(\theta)=e^{-i\frac{\theta Y}{2}}$ are pre-implemented. You can look at their precise definitions
 \textcolor{blue}{\href{https://myqlm.github.io/aqasm.html\#aqasm}{here}}.
 
 \paragraph{Question 2} Following the example above, which is already implemented in the notebook, and knowing in addition that:
