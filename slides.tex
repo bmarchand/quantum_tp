@@ -1,5 +1,6 @@
 \documentclass{beamer}
 
+\setbeamertemplate{footline}[frame number]
 \setbeamertemplate{navigation symbols}{}
 
 \usepackage{xcolor}
@@ -9,12 +10,28 @@
 
 \title{Quantum phase estimation \\-\\ An example from chemistry}
 
+\author{Bertrand Marchand \\PhD student @ LIX}
+
 \begin{document}
 \frame{\titlepage}
 
+\begin{frame}
+\frametitle{Program}
+
+\begin{itemize}
+\item[1.] Some context with these slides.
+\item[2.] Installation problems ?
+\item[3.] Your turn. Fill the ``quantum\_tp\_pea.ipynb'' according to ``TP\_instructions.pdf''. You will find them in Teams: Files $\rightarrow$ 
+TP\_programmation $\rightarrow$ TP\_kit\_phase\_estimation 
+\item[4.] Finish it and send it\footnote{the .ipynb file. Don't forget to save from time to time.} 
+by \textbf{Thursday 14 January}.
+\item[5.] Two important keyboard short-cuts to know: Shift+Enter and Ctrl+Enter.
+\end{itemize}
+
+\end{frame}
 
 \begin{frame}
-\frametitle{prequisite: quantum circuits}
+\frametitle{Prequisite: quantum circuits}
 
 \begin{center}
 \begin{figure}
@@ -49,7 +66,7 @@ quantum computers to solve these problems ?\\~\\
 \end{frame}
 
 \begin{frame}
-\frametitle{Quantum Simulation: more precisely}
+\frametitle{Quantum simulation: more precisely}
 
 Most of the time in the potential applications I mentioned (particle phycics, condensed matter, chemistry),
 the computation consists in \textbf{diagonalizing Hamiltonians} and in particular find their \textbf{ground
@@ -82,12 +99,12 @@ and other application contexts.\\
 \end{frame}
 
 \begin{frame}
-\frametitle{iterative quantum phase estimation: what we will use}
+\frametitle{Iterative quantum phase estimation: what we will use}
 
 {\fontfamily{lmr}\selectfont for k in \textbf{range}($n_{B}$, 0, -1)\footnote{Python style}:
 \begin{itemize}
 \item[1.] compute $\phi_{k}=\sum_{l=k+1}^{n_{B}} \frac{b_{l}}{2^{l-k+1}}$
-\item[2.] execute the following circuit: 
+\item[2.] produce and execute the following circuit: 
 \end{itemize}
 \begin{figure}
 \includegraphics[width=.6\textwidth]{iterative_pea.eps}

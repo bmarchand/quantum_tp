@@ -15,7 +15,8 @@
 \maketitle
 \begin{abstract}
 You need to fill up some notebook cells with your implementation according to the questions.
-Send the notebooks and helper files in a zip by next Thursday, Janurary 14 2021. They will be corrected and graded.
+\textbf{Send the completed notebook file by next Thursday, Janurary 14 2021}, by mail to bertrand.marchand7@gmail.com. 
+It will be corrected and graded.
 \end{abstract}
 
 \section{Quantum Programming Basics}
@@ -30,7 +31,7 @@ Where $ham\_X(\theta) = e^{-i\theta X}$ with $X=\begin{pmatrix}0 & 1 \\ 1 & 0\en
 
 \paragraph{Hint} Define $ham\_X$ as an ``AbstractGate'', then apply it using ``.ctrl()'' to get a controlled version, as suggested in 
 the ``minimal notebook''. Don't hesitate to also refer to the slides that were sent to you, for instance for the definition of what
-a controlled gate is.
+a controlled gate is (slide 2).
 
 \section{Iterative quantum phase estimation, reproducing results from \textcolor{blue}{\cite{o2016scalable}}}
 
@@ -109,20 +110,28 @@ of each individual terms, they are available in the list of dictionaries loaded 
 of the notebook, from {\fontfamily{lmr}\selectfont hamiltonian\_data.json}. As specified in the notebook,
 your function should also take an "energy shift" as input parameter. It consists in adding a $+shift\cdot I$
 term to your Hamiltonian. We will use it to ensure the energies we compute are $>0$. Take a look at the 
-slides for more explanations.
+slides (slide 10) for more explanations.
 
 \subsubsection{Iterative Phase estimation}
 
+\begin{figure}
+\centering
+\includegraphics[width=.6\textwidth]{pseudo_code.eps}
+\caption{The pseudocode and circuit to implement at \textbf{Question 4}}
+\label{pseudocode}
+\end{figure}
+
 \paragraph{Question 4} Implement iterative phase estimation following the template provided in the notebook, 
-and the definitions given in the slides.
+the definitions given in the slides (slide 6) and Figure~\ref{pseudocode}.
 
 In a few words, you need to loop over $k=n_{B},...,1$ in that order, and for each of these values:
 \begin{itemize}
-\item Produce the circuit displayed on the slides. Depending on the value of the ``trotterization'' Boolean
+\item Produce the circuit displayed on the slides (slide 6) and Figure~\ref{pseudocode}. 
+Depending on the value of the ``trotterization'' Boolean
 flag, the Hamiltonian simulation can either be the ideal ``cheat mode'' version that exponentiates the Hamiltonian,
 or the Trotterized version you implemented. In place of ``$|\psi\rangle$'', the ground state of the Hamiltonian,
-we will use a simple ansatz, the Hartree-Fock approximation to our problem: $|01\rangle$, as suggested in
-\textcolor{blue}{\cite{o2016scalable}}, and explained in the slides.
+we will use a simple ansatz, the Hartree-Fock approximation to our problem: $|01\rangle=(I\otimes X)|00\rangle$, as suggested in
+\textcolor{blue}{\cite{o2016scalable}}, and explained in the slides (slide 10).
 \item simulate the circuit, specifying at job creation that you are interested in the first qubit only, and 
 select the most probable result\footnote{Of course in a real setting we would have to run the circuit many times
 to estimate the probabilities, here, we compute them numerically.}.
@@ -134,6 +143,37 @@ to estimate the probabilities, here, we compute them numerically.}.
 thing you need to fill is the conversion of phases back to energies. Put your implementation where indicated and produce the plots.
 The ``ideal'' result should be a smooth $H_{2}$ dissociation curve, while the Trotterized version should be more ``wiggly'',
 the curve with $p=10$ being a closer approximation to the ideal curve, as expected.
+
+\appendix
+\section{tensor products, matrix exponential and Pauli matrices}
+
+\subsection{Pauli matrices}
+
+$$ X = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} $$
+
+$$ Y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix} $$
+
+$$ Z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} $$
+
+\subsection{tensor products}
+
+$$ (A\otimes B)\cdot (C\otimes D) = AC\otimes BD $$
+
+$$ I\otimes A^{\dagger} = I^{\dagger}\otimes A^{\dagger} = 
+(A\otimes I)^{\dagger}   $$
+
+with $I$ the plain identity matrix.
+\subsection{matrix exponential}
+
+\begin{align*}
+e^{U^{\dagger}AU} &= \sum_{k=0}^{+\infty} \frac{(U^{\dagger}AU)^{k}}{k!} \\ 
+&= \sum_{k=0}^{+\infty} \frac{U^{\dagger}A^{k}U}{k!} \\ 
+&= U^{\dagger}\sum_{k=0}^{+\infty} \frac{A^{k}}{k!}U \\ 
+&= U^{\dagger}e^{A}U \\ 
+\end{align*}
+
+This is what happens with $CNOT_{0\rightarrow 1}$
+in the example that is given.
 
 \bibliography{biblio}
 \bibliographystyle{unsrt}

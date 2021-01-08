@@ -1,0 +1,71 @@
+Bonjour à tous,
+
+Le TP de programmation quantique de ce vendredi 8/01 (dans le cadre du cours de technologies quantiques) se fera en Python3, au sein d'un notebook Jupyter, en utilisant la librairie de programmation quantique myqlm (développée par l'entreprise Atos: https://myqlm.github.io/index.html).
+
+Vous utiliserez vos machines personnelles, sur lesquelles vous devez donc installer python3,  jupyter-notebook et myqlm (y compris les "jupyter magics" propres à myqlm).
+
+Le test pour savoir si vous avez installé tous les prérequis nécessaires au TP est de réussir à faire tourner le "minimal_notebook" ci-joint (i.e vous devez réussir à ouvrir le notebook et faire tourner sans erreurs toutes ses cellules). L'idéal serait que vous réussissiez à le faire tourner d'ici vendredi. Je suis à votre disposition par mail ou par teams pour répondre à vos questions concernant l'installation.
+
+Si vous ne savez pas ce qu'est un jupyter-notebook: https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks .
+
+LINUX:
+
+1. Ouvrez un terminal.
+
+2. Vérifiez votre version de python en tapant "python3 --version". Vérifiez la concordance entre cette version et les prérequis de myqlm: https://myqlm.github.io/myqlm_specific/install.html#prerequisites
+
+(il vous faut python3.6 ou python3.8 sur linux. 3.7 ne marchera pas. python 3.8 est le défaut sur ubuntu
+lorsqu'on lance "sudo apt install python3-dev".)
+
+3. exécutez "python3 -m pip install jupyter" 
+
+4. exécutez "python3 -m pip install myqlm"
+
+5. Installez ImageMagick: https://docs.wand-py.org/en/0.4.1/guide/install.html
+
+6. exécutez "python3 -m qat.magics.install"
+
+4. exécutez: "python3 -m jupyter notebook --no-browser --port 8080" et ouvrez le lien qui s'affiche sur votre terminal. Naviguez jusqu'au minimal_notebook, ouvrez-le, et essayez d'éxécuter ses cellules. Vous pouvez faire Kernel --> restart and run all pour tout lancer d'un coup. Si il n'y a pas d'erreurs vous avez terminé.
+
+MAC:
+
+Pour que myqlm fonctionne sur mac, il faut qu'il ait été installé d'une certaine manière, d'où les instructions suivantes:
+
+1. Téléchargez le "macos installer" pour python3.8 à cette adresse: https://www.python.org/ftp/python/3.8.7/python-3.8.7-macosx10.9.pkg
+
+2. Lancez-le pour installer python3.8
+
+3. Ouvrez un terminal, et tapez: "which python3.8" pour vérifier l'installation. Cela devrait vous afficher qqch contenant 
+"Frameworks/Python.framework/[ETC]".
+
+4. "python3.8 -m pip install myqlm" (cela appelle le pip spécifique à cette version de python)
+
+5. "python3.8 -m pip install jupyter" (pour que jupyter aie accès à cette version)
+
+6. "python3.8 -m qat.magics.install" (en ayant, comme spécifié sur https://myqlm.github.io/myqlm_specific/install.html, installé ImageMagick avant).
+
+7. "python3.8 -m jupyter notebook --no-browser --port 8080" (pour être sûr que jupyter utilisera cette version de python)
+
+8. Naviguez jusqu'au minimal_notebook et exécutez-le.
+
+WINDOWS:
+
+Le plus simple, que j'ai pu tester sur une machine windows avec succès, serait de:
+
+1. Installez anaconda individual edition: https://www.anaconda.com/products/individual
+
+(c'est un peu volumineux: ~500Mb, mais tout se fait très facilement ensuite)
+
+2. lancez "anaconda navigator".
+
+3. cliquez-sur "CMD command prompt".
+
+4. éxécutez "pip install myqlm".
+
+5. comme expliqué sur https://myqlm.github.io/myqlm_specific/install.html#prerequisites, installez ImageMagick. Puis éxécutez "python -m qat.magics.install"
+
+6. retournez sur "anaconda navigator" et cliquez sur "launch jupyter notebook". Naviguez sur le minimal_notebook et tout devrait marcher.
+
+à vendredi sur Teams,
+Bertrand Marchand.
+
