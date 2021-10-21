@@ -103,7 +103,7 @@ and other application contexts.\\
 
 {\fontfamily{lmr}\selectfont for k in \textbf{range}($n_{B}$, 0, -1)\footnote{Python style}:
 \begin{itemize}
-\item[1.] compute $\phi_{k}=\sum_{l=k+1}^{n_{B}} \frac{b_{l}}{2^{l-k+1}}$
+\item[1.] compute $\phi_{k}=2\pi\cdot\sum_{l=k+1}^{n_{B}} \frac{b_{l}}{2^{l-k+1}}$
 \item[2.] produce and execute the following circuit: 
 \end{itemize}
 \begin{figure}
@@ -124,7 +124,7 @@ $RZ(\phi_{k})=\begin{pmatrix} 1 & 0 \\ 0 & e^{i\phi_{k}}\end{pmatrix}$
 \end{figure}
 \end{center}
 Recall that $\phi=0.b_{1}\cdots b_{n_{B}}$ in binary decomposition,
-$\phi_{k}=\sum_{l=k+1}^{n_{B}} \frac{b_{l}}{2^{l-k+1}}=0.0b_{k+1}\cdots b_{n_{B}}$
+$\phi_{k}=2\pi\cdot\sum_{l=k+1}^{n_{B}} \frac{b_{l}}{2^{l-k+1}}=0.0b_{k+1}\cdots b_{n_{B}}$
 and $U|\psi\rangle=e^{-2i\pi\phi}|\psi\rangle$.\\~\\
 \textbf{Evolution of the system:}\\~\\
 $|0\rangle|\psi\rangle \underset{H}{\rightarrow} \left(\frac{|0\rangle+|1\rangle}{\sqrt{2}}\right)|\psi\rangle=
@@ -182,7 +182,7 @@ Then $\mathcal{H}\leftarrow \mathcal{H}-E_{min}\cdot I$ ensures $E>0$ and choosi
 \frametitle{Other problems}
 \textbf{Problem 2} In general we do not have access to the ground state.\\$\quad\rightarrow$use an \textbf{ansatz}\footnote{easy-to-prepare approximation} 
 with theoretical good overlap with ground state. As suggested in \textcolor{blue}{\cite{o2016scalable}}, we will
-use here the Hartree-Fock approxiamtion to our problem, namely $|01\rangle=I\otimes X |00\rangle$\\~\\
+use here the Hartree-Fock approxiamtion to our problem, namely $|10\rangle=X\otimes I |00\rangle$\\~\\
 
 \textbf{Problem 3} How do we implement $U^{2^{k}} = e^{-i\mathcal{H}2^{k}dt}$ ?\\
 $\quad\rightarrow$ usually $\mathcal{H}$ comes as a sum of simpler terms $\sum_{l} \mathcal{H}_{l}$\\

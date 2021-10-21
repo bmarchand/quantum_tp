@@ -112,6 +112,11 @@ your function should also take an "energy shift" as input parameter. It consists
 term to your Hamiltonian. We will use it to ensure the energies we compute are $>0$. Take a look at the 
 slides (slide 10) for more explanations.
 
+To be more explicit, the QRoutine should implement:
+$$ dt, p \rightarrow \left[e^{-i\frac{g_{0}dt}{p}I}e^{-i\frac{g_{1}dt}{p}ZI}e^{-i\frac{g_{2}dt}{p}IZ}e^{-i\frac{g_{3}dt}{p}ZZ}e^{-i\frac{g_{4}dt}{p}YY}e^{-i\frac{g_{5}dt}{p}XX}\right]^{p} $$
+
+We recall that: $H=g_{0}I + g_{1}ZI + g_{2}IZ + g_{3}ZZ + g_{4}YY + g_{5}XX$
+
 \subsubsection{Iterative Phase estimation}
 
 \begin{figure}
@@ -130,7 +135,7 @@ In a few words, you need to loop over $k=n_{B},...,1$ in that order, and for eac
 Depending on the value of the ``trotterization'' Boolean
 flag, the Hamiltonian simulation can either be the ideal ``cheat mode'' version that exponentiates the Hamiltonian,
 or the Trotterized version you implemented. In place of ``$|\psi\rangle$'', the ground state of the Hamiltonian,
-we will use a simple ansatz, the Hartree-Fock approximation to our problem: $|01\rangle=(I\otimes X)|00\rangle$, as suggested in
+we will use a simple ansatz, the Hartree-Fock approximation to our problem: $|10\rangle=(X\otimes I)|00\rangle$, as suggested in
 \textcolor{blue}{\cite{o2016scalable}}, and explained in the slides (slide 10).
 \item simulate the circuit, specifying at job creation that you are interested in the first qubit only, and 
 select the most probable result\footnote{Of course in a real setting we would have to run the circuit many times
