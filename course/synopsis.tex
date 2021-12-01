@@ -1,10 +1,12 @@
 \documentclass{article}
 
+\usepackage{cancel}
 \usepackage{amsmath}
+\usepackage{tikz}
 \usepackage{amsfonts}
 
 \begin{document}
-
+\tableofcontents
 \section{The computational model: quantum circuits}
 
 \subsection{qubits}
@@ -100,6 +102,63 @@ know) only exponential/super-polynomial classical algorithms ?
 
 \subsection{by hand example - Deutsch-Josza}
 
+From a classical circuit computing a Boolean function, it is fairly easy to get a reversible 
+circuit computing that function. From a reversible circuit, it is easy to get a quantum 
+version using Toffoli-s and CNOTs. This quantum version is usually an oracle, i.e. that does
+$$|x\rangle|y\rangle\xrightarrow[O_f]{}|x\rangle|y\oplus f(x)\rangle$$.
+
+The Deutsch-Josza algorithm solves the following problem:\\
+\textbf{Input:} a fonction $f:\{0,1\}^{n}\rightarrow \{0,1\}$,
+with the promise that it is either \textbf{balanced} ($|f^{-1}(0)|=|f^{-1}|(1)$) or
+\textbf{constant}.\\
+\textbf{Task:} decide whether $f$ is constant or balanced.
+
+\paragraph{Classical algorithm} Classically, one needs to compute $f$ for at least
+half of the entries plus 1, i.e. $2^{n-1}+1$ calls to $f$ at least.
+
+\paragraph{Quantum algorithm} Quantumly, one call to the oracle is enough ! With
+the circuit below.
+
+\begin{center}
+\begin{figure}
+\includegraphics[width=.6\textwidth]{deutsch_josza.pdf}
+\end{figure}
+\end{center}
+
+Let us walk through the steps of the algorithm for $n=1$.
+In this case, either $f$ is constant and $f(0)=f(1)=b$, 
+or $f$ is balanced and $f(0)=b$ while $f(1)=1-b$.
+For all binary numbers we write $\overline{x}=1-x$
+
+To start with, Hadamard gates are applied:
+
+\begin{align*}
+    |01\rangle &\xrightarrow{H\otimes H} \left(\frac{|0\rangle+|1\rangle}{\sqrt{2}}\right)\otimes \left(\frac{|0\rangle-|1\rangle}{\sqrt{2}}\right)\\
+    &= \left(\frac{|00\rangle+|10\rangle-|01\rangle-|11\rangle}{2}\right)
+\end{align*}
+Then, the oracle, which yields:
+\begin{align*}
+\frac{|0f(0)\rangle+|1f(1)\rangle-|0\overline{f(0)}\rangle-|1\overline{f(1)}\rangle}{2}
+\end{align*}
+Now let us distinguish the two cases:
+\begin{itemize}
+    \item if $f$ is constant, the application of $H\otimes I$ will yield:
+\begin{align*}
+\frac{|0f(0)\rangle+|1f(1)\rangle-|0\overline{f(0)}\rangle-|1\overline{f(1)}\rangle}{2}
+&=\frac{|0b\rangle+|1b\rangle-|0\overline{b}\rangle-|1\overline{b}\rangle}{2}\\
+&=\left(\frac{|0\rangle+|1\rangle}{\sqrt{2}}\right)\otimes \left(\frac{|b\rangle-|\overline{b}\rangle}{\sqrt{2}}\right)\\
+&\xrightarrow[H\otimes I]{} |0\rangle \otimes \left(\frac{|b\rangle-|\overline{b}\rangle}{\sqrt{2}}\right)
+\end{align*}
+and therefore $0$ is measured.
+\item if $f$ is balanced, then $f(0)=b$ and $f(1)=\overline{b}$ and:
+\begin{align*}
+\frac{|0f(0)\rangle+|1f(1)\rangle-|0\overline{f(0)}\rangle-|1\overline{f(1)}\rangle}{2}
+&=\frac{|0b\rangle+|1\bar{b}\rangle-|0\overline{b}\rangle-|1b\rangle}{2}\\
+&\xrightarrow[H\otimes I]{}
+    \frac{\cancel{|0b\rangle}+|1b\rangle+\cancel{|0\bar{b}\rangle}-|1\bar{b}\rangle-\cancel{|0\overline{b}\rangle}-|1\overline{b}\rangle-\cancel{|0b\rangle}+|1b\rangle}{\sqrt{8}}\\
+&= |1\rangle\otimes\left(\frac{|b\rangle-|\overline{b}\rangle}{\sqrt{2}}\right)
+\end{align*}
+\end{itemize}
 \subsection{Quantum Fourier Transform}
 
 \subsection{Phase Estimation}
