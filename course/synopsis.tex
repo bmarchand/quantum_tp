@@ -161,7 +161,43 @@ and therefore $0$ is measured.
 \end{itemize}
 \subsection{Quantum Fourier Transform}
 
+\paragraph{Definition} Looking a lot like a quantized version of the Fast Fourier Transform, the definition of the quantum Fourier
+transform is as such:
+$$ |j\rangle \xrightarrow[]{QFT} \frac{1}{\sqrt{2^n}} \sum_{k=0}^{2^n-1} e^{\frac{2i\pi jk}{2^n}} |k\rangle $$
+
 \subsection{Phase Estimation}
+
+How can suh a thing be useful ? In fact building block of the blueprint for every 
+quantum algorithms exhibiting a presumed exponential speed-up.
+
+Imagine a unitary operator $U$ with an eigenvector $|u\rangle$ and
+eigenvalue $e^{2i\pi \phi}$ with $\phi\in[0,1[$. In the case of Shor's algorithm,
+algorithms for quantum chemistry, quantum linear algebra... \emph{The hard part is 
+computing $\phi$ for a specific $U$.}
+
+The QFT (or rather its inverse) allows to extract $\phi$ from the following state:
+$$\frac{1}{\sqrt{2^n}}\sum_{k=0}^{2^n-1} e^{2i\pi\phi k}  |k\rangle$$
+
+Indeed we can write $\phi=0.\phi_0...\phi_{n-1}=\sum_{k}\frac{\phi_k}{2^k}$.
+Which we also write in reverse $\phi=0.\tilde{\phi}_{n-1}...\tilde{\phi}_0=
+\sum_{l}\frac{\tilde{\phi}_l 2^l}{2^n}$.
+
+\begin{align*}
+  \frac{1}{\sqrt{2^n}}  \sum_{k=0}^{2^n-1} e^{2i\pi\phi k}  |k\rangle &= \frac{1}{\sqrt{2^n}}\sum_{k=0}^{2^n-1} e^{\frac{2i\pi k \left(\sum_l{\tilde{\phi}_l 2^l}\right)}{2^n} }  |k\rangle \\ 
+\end{align*}
+Which becomes, when applying an inverse QFT, we get the state $|\tilde{\phi}_0...\tilde{\phi}_{n-1}\rangle$
+
+\paragraph{} But how do we get this state: $\frac{1}{\sqrt{2^n}}\sum_{k=0}^{2^n-1} e^{2i\pi\phi k} $ ? 
+Let us write:
+\begin{align*}
+ \frac{1}{\sqrt{2^n}}   \sum_{k=0}^{2^n-1} e^{2i\pi\phi k} |k\rangle &= \frac{1}{\sqrt{2^n}} \sum_{k=0}^{2^n-1} e^{2i\pi\phi \left(\sum_{l} k_l 2^l\right)} |k\rangle \\
+    &= \frac{1}{\sqrt{2^n}}\sum_{k_1=0,1}...\sum_{k_n=0,1} \prod_{l} e^{2i\pi\phi k_l 2^l} |k_1...k_n\rangle \\
+    &= \otimes_{l=0}^{n-1} \left(\frac{|0\rangle+e^{2i\pi\phi 2^l}|1\rangle}{\sqrt{2}}\right)
+\end{align*}
+
+A state that is almost equal to what we want is $\left(H\otimes ... \otimes H\right) |0...0\rangle = \otimes_{l=0}^{n-1} \left(\frac{|0\rangle+|1\rangle}{\sqrt{2}}\right)$. From it, we need to apply a phase on qubit $l$ \emph{when it is equal to $1$ but not when it is equal to $0$.} We can do that with a controlled operation.
+
+We just need to apply $U^{2^j}$ on $|u\rangle$, controlled by qubit $j$.
 
 \subsection{Overview: other algorithms and their speedup}
 
