@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   height="100"
+   height="500"
    version="1.1"
-   viewBox="0 0 4509 105.25"
+   viewBox="0 0 4509 526.25"
    width="1200"
    id="svg40183"
    sodipodi:docname="qft.svg"
@@ -20,17 +20,184 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="0.4050718"
-     inkscape:cx="759.12468"
-     inkscape:cy="433.25652"
+     inkscape:zoom="0.6807725"
+     inkscape:cx="779.2618"
+     inkscape:cy="106.49666"
      inkscape:window-width="1528"
      inkscape:window-height="836"
-     inkscape:window-x="1032"
+     inkscape:window-x="72"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg40183" />
+     inkscape:current-layer="svg40183"
+     inkscape:snap-global="false"
+     height="500px" />
   <defs
      id="defs39741">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect43246"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect43242"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect43238"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect43183"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect43179"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect43175"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect43120"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect43116"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect43112"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect42651"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect42647"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect42643"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect42560"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect42525"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect42198"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
     <style
        type="text/css"
        id="style39739"><![CDATA[@font-face{ 
@@ -41,123 +208,123 @@
   </defs>
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="31.446035"
-     y="-96.224754"
+     x="35.726452"
+     y="-617.62402"
      id="text39743">Q0</text>
   <line
      stroke="#000000"
-     x1="71.44603"
-     x2="4530.4458"
-     y1="-101.22475"
-     y2="-101.22475"
+     x1="75.726448"
+     x2="4534.7261"
+     y1="-622.62402"
+     y2="-622.62402"
      id="line39745" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="31.446035"
-     y="-64.224754"
+     x="35.726452"
+     y="-585.62396"
      id="text39747">Q1</text>
   <line
      stroke="#000000"
-     x1="71.44603"
-     x2="4530.4458"
-     y1="-69.224754"
-     y2="-69.224754"
+     x1="75.726448"
+     x2="4534.7261"
+     y1="-590.62396"
+     y2="-590.62396"
      id="line39749" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="31.446035"
-     y="-32.224754"
+     x="35.726452"
+     y="-553.6239"
      id="text39751">Q2</text>
   <line
      stroke="#000000"
-     x1="71.44603"
-     x2="4530.4458"
-     y1="-37.224754"
-     y2="-37.224754"
+     x1="75.726448"
+     x2="4534.7261"
+     y1="-558.6239"
+     y2="-558.6239"
      id="line39753" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="31.446035"
-     y="-0.22475475"
+     x="35.726452"
+     y="-521.6239"
      id="text39755">Q3</text>
   <line
      stroke="#000000"
-     x1="71.44603"
-     x2="4530.4458"
-     y1="-5.2247548"
-     y2="-5.2247548"
+     x1="75.726448"
+     x2="4534.7261"
+     y1="-526.6239"
+     y2="-526.6239"
      id="line39757" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="31.446035"
-     y="31.775246"
+     x="35.726452"
+     y="-489.62384"
      id="text39759">Q4</text>
   <line
      stroke="#000000"
-     x1="71.44603"
-     x2="4530.4458"
-     y1="26.775246"
-     y2="26.775246"
+     x1="75.726448"
+     x2="4534.7261"
+     y1="-494.62384"
+     y2="-494.62384"
      id="line39761" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="31.446035"
-     y="63.775276"
+     x="35.726452"
+     y="-457.62378"
      id="text39763">Q5</text>
   <line
      stroke="#000000"
-     x1="71.44603"
-     x2="4530.4458"
-     y1="58.775276"
-     y2="58.775276"
+     x1="75.726448"
+     x2="4534.7261"
+     y1="-462.62378"
+     y2="-462.62378"
      id="line39765" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="31.446035"
-     y="95.775276"
+     x="35.726452"
+     y="-425.62378"
      id="text39767">Q6</text>
   <line
      stroke="#000000"
-     x1="71.44603"
-     x2="4530.4458"
-     y1="90.775276"
-     y2="90.775276"
+     x1="75.726448"
+     x2="4534.7261"
+     y1="-430.62378"
+     y2="-430.62378"
      id="line39769" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="31.446035"
-     y="127.77531"
+     x="35.726452"
+     y="-393.62375"
      id="text39771">Q7</text>
   <line
      stroke="#000000"
-     x1="71.44603"
-     x2="4530.4458"
-     y1="122.77528"
-     y2="122.77528"
+     x1="75.726448"
+     x2="4534.7261"
+     y1="-398.62378"
+     y2="-398.62378"
      id="line39773" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="31.446035"
-     y="159.77531"
+     x="35.726452"
+     y="-361.62375"
      id="text39775">Q8</text>
   <line
      stroke="#000000"
-     x1="71.44603"
-     x2="4530.4458"
-     y1="154.7753"
-     y2="154.7753"
+     x1="75.726448"
+     x2="4534.7261"
+     y1="-366.62375"
+     y2="-366.62375"
      id="line39777" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="31.446035"
-     y="191.77524"
+     x="35.726452"
+     y="-329.62381"
      id="text39779">Q9</text>
   <line
      stroke="#000000"
-     x1="71.44603"
-     x2="4530.4458"
-     y1="186.77525"
-     y2="186.77525"
+     x1="75.726448"
+     x2="4534.7261"
+     y1="-334.62381"
+     y2="-334.62381"
      id="line39781" />
   <rect
      fill="#ffffff"
@@ -165,24 +332,24 @@
      stroke="#000000"
      stroke-width="2"
      width="30"
-     x="81.44603"
-     y="-113.22475"
+     x="85.726448"
+     y="-634.62408"
      id="rect39783" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="89.44603"
-     y="-96.224754"
+     x="93.726448"
+     y="-617.62402"
      id="text39785">H</text>
   <line
      stroke="#000000"
-     x1="158.44604"
-     x2="158.44604"
-     y1="-69.224754"
-     y2="-101.22475"
+     x1="162.72646"
+     x2="162.72646"
+     y1="-590.62396"
+     y2="-622.62402"
      id="line39787" />
   <circle
-     cx="158.44604"
-     cy="-101.22475"
+     cx="162.72646"
+     cy="-622.62402"
      fill="#000000"
      r="4"
      id="circle39789" />
@@ -192,24 +359,24 @@
      stroke="#000000"
      stroke-width="2"
      width="75"
-     x="121.44603"
-     y="-81.224754"
+     x="125.72645"
+     y="-602.62396"
      id="rect39791" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="129.44604"
-     y="-64.224754"
+     x="133.72646"
+     y="-585.62396"
      id="text39793">PH [π/2]</text>
   <line
      stroke="#000000"
-     x1="243.44604"
-     x2="243.44604"
-     y1="-37.224754"
-     y2="-101.22475"
+     x1="247.72646"
+     x2="247.72646"
+     y1="-558.6239"
+     y2="-622.62402"
      id="line39795" />
   <circle
-     cx="243.44604"
-     cy="-101.22475"
+     cx="247.72646"
+     cy="-622.62402"
      fill="#000000"
      r="4"
      id="circle39797" />
@@ -219,24 +386,24 @@
      stroke="#000000"
      stroke-width="2"
      width="75"
-     x="206.44604"
-     y="-49.224754"
+     x="210.72646"
+     y="-570.6239"
      id="rect39799" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="214.44604"
-     y="-32.224754"
+     x="218.72646"
+     y="-553.6239"
      id="text39801">PH [π/4]</text>
   <line
      stroke="#000000"
-     x1="328.44601"
-     x2="328.44601"
-     y1="-5.2247548"
-     y2="-101.22475"
+     x1="332.72644"
+     x2="332.72644"
+     y1="-526.6239"
+     y2="-622.62402"
      id="line39803" />
   <circle
-     cx="328.44601"
-     cy="-101.22475"
+     cx="332.72644"
+     cy="-622.62402"
      fill="#000000"
      r="4"
      id="circle39805" />
@@ -246,24 +413,24 @@
      stroke="#000000"
      stroke-width="2"
      width="75"
-     x="291.44601"
-     y="-17.224754"
+     x="295.72644"
+     y="-538.6239"
      id="rect39807" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="299.44601"
-     y="-0.22475475"
+     x="303.72644"
+     y="-521.6239"
      id="text39809">PH [π/8]</text>
   <line
      stroke="#000000"
-     x1="417.44601"
-     x2="417.44601"
-     y1="26.775246"
-     y2="-101.22475"
+     x1="421.72644"
+     x2="421.72644"
+     y1="-494.62384"
+     y2="-622.62402"
      id="line39811" />
   <circle
-     cx="417.44601"
-     cy="-101.22475"
+     cx="421.72644"
+     cy="-622.62402"
      fill="#000000"
      r="4"
      id="circle39813" />
@@ -273,24 +440,24 @@
      stroke="#000000"
      stroke-width="2"
      width="83"
-     x="376.44601"
-     y="14.775246"
+     x="380.72644"
+     y="-506.62387"
      id="rect39815" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="384.44601"
-     y="31.775246"
+     x="388.72644"
+     y="-489.62384"
      id="text39817">PH [π/16]</text>
   <line
      stroke="#000000"
-     x1="510.44604"
-     x2="510.44604"
-     y1="58.775276"
-     y2="-101.22475"
+     x1="514.72644"
+     x2="514.72644"
+     y1="-462.62378"
+     y2="-622.62402"
      id="line39819" />
   <circle
-     cx="510.44604"
-     cy="-101.22475"
+     cx="514.72644"
+     cy="-622.62402"
      fill="#000000"
      r="4"
      id="circle39821" />
@@ -300,24 +467,24 @@
      stroke="#000000"
      stroke-width="2"
      width="83"
-     x="469.44601"
-     y="46.775246"
+     x="473.72644"
+     y="-474.62384"
      id="rect39823" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="477.44601"
-     y="63.775276"
+     x="481.72644"
+     y="-457.62378"
      id="text39825">PH [π/32]</text>
   <line
      stroke="#000000"
-     x1="603.44604"
-     x2="603.44604"
-     y1="90.775276"
-     y2="-101.22475"
+     x1="607.72644"
+     x2="607.72644"
+     y1="-430.62378"
+     y2="-622.62402"
      id="line39827" />
   <circle
-     cx="603.44604"
-     cy="-101.22475"
+     cx="607.72644"
+     cy="-622.62402"
      fill="#000000"
      r="4"
      id="circle39829" />
@@ -327,24 +494,24 @@
      stroke="#000000"
      stroke-width="2"
      width="83"
-     x="562.44604"
-     y="78.775276"
+     x="566.72644"
+     y="-442.62378"
      id="rect39831" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="570.44604"
-     y="95.775276"
+     x="574.72644"
+     y="-425.62378"
      id="text39833">PH [π/64]</text>
   <line
      stroke="#000000"
-     x1="700.44604"
-     x2="700.44604"
-     y1="122.77528"
-     y2="-101.22475"
+     x1="704.72644"
+     x2="704.72644"
+     y1="-398.62378"
+     y2="-622.62402"
      id="line39835" />
   <circle
-     cx="700.44604"
-     cy="-101.22475"
+     cx="704.72644"
+     cy="-622.62402"
      fill="#000000"
      r="4"
      id="circle39837" />
@@ -354,24 +521,24 @@
      stroke="#000000"
      stroke-width="2"
      width="91"
-     x="655.44604"
-     y="110.77528"
+     x="659.72644"
+     y="-410.62378"
      id="rect39839" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="663.44604"
-     y="127.77531"
+     x="667.72644"
+     y="-393.62375"
      id="text39841">PH [π/128]</text>
   <line
      stroke="#000000"
-     x1="801.44604"
-     x2="801.44604"
-     y1="154.7753"
-     y2="-101.22475"
+     x1="805.72644"
+     x2="805.72644"
+     y1="-366.62375"
+     y2="-622.62402"
      id="line39843" />
   <circle
-     cx="801.44604"
-     cy="-101.22475"
+     cx="805.72644"
+     cy="-622.62402"
      fill="#000000"
      r="4"
      id="circle39845" />
@@ -381,24 +548,24 @@
      stroke="#000000"
      stroke-width="2"
      width="91"
-     x="756.44604"
-     y="142.7753"
+     x="760.72644"
+     y="-378.62375"
      id="rect39847" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="764.44604"
-     y="159.77531"
+     x="768.72644"
+     y="-361.62375"
      id="text39849">PH [π/256]</text>
   <line
      stroke="#000000"
-     x1="902.44604"
-     x2="902.44604"
-     y1="186.77525"
-     y2="-101.22475"
+     x1="906.72644"
+     x2="906.72644"
+     y1="-334.62381"
+     y2="-622.62402"
      id="line39851" />
   <circle
-     cx="902.44604"
-     cy="-101.22475"
+     cx="906.72644"
+     cy="-622.62402"
      fill="#000000"
      r="4"
      id="circle39853" />
@@ -408,13 +575,13 @@
      stroke="#000000"
      stroke-width="2"
      width="91"
-     x="857.44604"
-     y="174.77528"
+     x="861.72644"
+     y="-346.62378"
      id="rect39855" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="865.44604"
-     y="191.77524"
+     x="869.72644"
+     y="-329.62381"
      id="text39857">PH [π/512]</text>
   <rect
      fill="#ffffff"
@@ -422,24 +589,24 @@
      stroke="#000000"
      stroke-width="2"
      width="30"
-     x="958.44604"
-     y="-81.224754"
+     x="962.72644"
+     y="-602.62396"
      id="rect39859" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="966.44604"
-     y="-64.224754"
+     x="970.72644"
+     y="-585.62396"
      id="text39861">H</text>
   <line
      stroke="#000000"
-     x1="1035.446"
-     x2="1035.446"
-     y1="-37.224754"
-     y2="-69.224754"
+     x1="1039.7264"
+     x2="1039.7264"
+     y1="-558.6239"
+     y2="-590.62396"
      id="line39863" />
   <circle
-     cx="1035.446"
-     cy="-69.224754"
+     cx="1039.7264"
+     cy="-590.62396"
      fill="#000000"
      r="4"
      id="circle39865" />
@@ -449,24 +616,24 @@
      stroke="#000000"
      stroke-width="2"
      width="75"
-     x="998.44611"
-     y="-49.224754"
+     x="1002.7265"
+     y="-570.6239"
      id="rect39867" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="1006.4461"
-     y="-32.224754"
+     x="1010.7265"
+     y="-553.6239"
      id="text39869">PH [π/2]</text>
   <line
      stroke="#000000"
-     x1="1120.446"
-     x2="1120.446"
-     y1="-5.2247548"
-     y2="-69.224754"
+     x1="1124.7264"
+     x2="1124.7264"
+     y1="-526.6239"
+     y2="-590.62396"
      id="line39871" />
   <circle
-     cx="1120.446"
-     cy="-69.224754"
+     cx="1124.7264"
+     cy="-590.62396"
      fill="#000000"
      r="4"
      id="circle39873" />
@@ -476,24 +643,24 @@
      stroke="#000000"
      stroke-width="2"
      width="75"
-     x="1083.446"
-     y="-17.224754"
+     x="1087.7264"
+     y="-538.6239"
      id="rect39875" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="1091.446"
-     y="-0.22475475"
+     x="1095.7264"
+     y="-521.6239"
      id="text39877">PH [π/4]</text>
   <line
      stroke="#000000"
-     x1="1205.446"
-     x2="1205.446"
-     y1="26.775246"
-     y2="-69.224754"
+     x1="1209.7264"
+     x2="1209.7264"
+     y1="-494.62384"
+     y2="-590.62396"
      id="line39879" />
   <circle
-     cx="1205.446"
-     cy="-69.224754"
+     cx="1209.7264"
+     cy="-590.62396"
      fill="#000000"
      r="4"
      id="circle39881" />
@@ -503,24 +670,24 @@
      stroke="#000000"
      stroke-width="2"
      width="75"
-     x="1168.446"
-     y="14.775246"
+     x="1172.7264"
+     y="-506.62387"
      id="rect39883" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="1176.446"
-     y="31.775246"
+     x="1180.7264"
+     y="-489.62384"
      id="text39885">PH [π/8]</text>
   <line
      stroke="#000000"
-     x1="1294.446"
-     x2="1294.446"
-     y1="58.775276"
-     y2="-69.224754"
+     x1="1298.7264"
+     x2="1298.7264"
+     y1="-462.62378"
+     y2="-590.62396"
      id="line39887" />
   <circle
-     cx="1294.446"
-     cy="-69.224754"
+     cx="1298.7264"
+     cy="-590.62396"
      fill="#000000"
      r="4"
      id="circle39889" />
@@ -530,24 +697,24 @@
      stroke="#000000"
      stroke-width="2"
      width="83"
-     x="1253.446"
-     y="46.775246"
+     x="1257.7264"
+     y="-474.62384"
      id="rect39891" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="1261.446"
-     y="63.775276"
+     x="1265.7264"
+     y="-457.62378"
      id="text39893">PH [π/16]</text>
   <line
      stroke="#000000"
-     x1="1387.446"
-     x2="1387.446"
-     y1="90.775276"
-     y2="-69.224754"
+     x1="1391.7264"
+     x2="1391.7264"
+     y1="-430.62378"
+     y2="-590.62396"
      id="line39895" />
   <circle
-     cx="1387.446"
-     cy="-69.224754"
+     cx="1391.7264"
+     cy="-590.62396"
      fill="#000000"
      r="4"
      id="circle39897" />
@@ -557,24 +724,24 @@
      stroke="#000000"
      stroke-width="2"
      width="83"
-     x="1346.446"
-     y="78.775276"
+     x="1350.7264"
+     y="-442.62378"
      id="rect39899" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="1354.446"
-     y="95.775276"
+     x="1358.7264"
+     y="-425.62378"
      id="text39901">PH [π/32]</text>
   <line
      stroke="#000000"
-     x1="1480.446"
-     x2="1480.446"
-     y1="122.77528"
-     y2="-69.224754"
+     x1="1484.7264"
+     x2="1484.7264"
+     y1="-398.62378"
+     y2="-590.62396"
      id="line39903" />
   <circle
-     cx="1480.446"
-     cy="-69.224754"
+     cx="1484.7264"
+     cy="-590.62396"
      fill="#000000"
      r="4"
      id="circle39905" />
@@ -584,24 +751,24 @@
      stroke="#000000"
      stroke-width="2"
      width="83"
-     x="1439.446"
-     y="110.77528"
+     x="1443.7264"
+     y="-410.62378"
      id="rect39907" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="1447.446"
-     y="127.77531"
+     x="1451.7264"
+     y="-393.62375"
      id="text39909">PH [π/64]</text>
   <line
      stroke="#000000"
-     x1="1577.446"
-     x2="1577.446"
-     y1="154.7753"
-     y2="-69.224754"
+     x1="1581.7264"
+     x2="1581.7264"
+     y1="-366.62375"
+     y2="-590.62396"
      id="line39911" />
   <circle
-     cx="1577.446"
-     cy="-69.224754"
+     cx="1581.7264"
+     cy="-590.62396"
      fill="#000000"
      r="4"
      id="circle39913" />
@@ -611,24 +778,24 @@
      stroke="#000000"
      stroke-width="2"
      width="91"
-     x="1532.446"
-     y="142.7753"
+     x="1536.7264"
+     y="-378.62375"
      id="rect39915" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="1540.446"
-     y="159.77531"
+     x="1544.7264"
+     y="-361.62375"
      id="text39917">PH [π/128]</text>
   <line
      stroke="#000000"
-     x1="1678.446"
-     x2="1678.446"
-     y1="186.77525"
-     y2="-69.224754"
+     x1="1682.7264"
+     x2="1682.7264"
+     y1="-334.62381"
+     y2="-590.62396"
      id="line39919" />
   <circle
-     cx="1678.446"
-     cy="-69.224754"
+     cx="1682.7264"
+     cy="-590.62396"
      fill="#000000"
      r="4"
      id="circle39921" />
@@ -638,13 +805,13 @@
      stroke="#000000"
      stroke-width="2"
      width="91"
-     x="1633.446"
-     y="174.77528"
+     x="1637.7264"
+     y="-346.62378"
      id="rect39923" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="1641.446"
-     y="191.77524"
+     x="1645.7264"
+     y="-329.62381"
      id="text39925">PH [π/256]</text>
   <rect
      fill="#ffffff"
@@ -652,24 +819,24 @@
      stroke="#000000"
      stroke-width="2"
      width="30"
-     x="1734.446"
-     y="-49.224754"
+     x="1738.7264"
+     y="-570.6239"
      id="rect39927" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="1742.446"
-     y="-32.224754"
+     x="1746.7264"
+     y="-553.6239"
      id="text39929">H</text>
   <line
      stroke="#000000"
-     x1="1811.446"
-     x2="1811.446"
-     y1="-5.2247548"
-     y2="-37.224754"
+     x1="1815.7264"
+     x2="1815.7264"
+     y1="-526.6239"
+     y2="-558.6239"
      id="line39931" />
   <circle
-     cx="1811.446"
-     cy="-37.224754"
+     cx="1815.7264"
+     cy="-558.6239"
      fill="#000000"
      r="4"
      id="circle39933" />
@@ -679,24 +846,24 @@
      stroke="#000000"
      stroke-width="2"
      width="75"
-     x="1774.446"
-     y="-17.224754"
+     x="1778.7264"
+     y="-538.6239"
      id="rect39935" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="1782.446"
-     y="-0.22475475"
+     x="1786.7264"
+     y="-521.6239"
      id="text39937">PH [π/2]</text>
   <line
      stroke="#000000"
-     x1="1896.446"
-     x2="1896.446"
-     y1="26.775246"
-     y2="-37.224754"
+     x1="1900.7264"
+     x2="1900.7264"
+     y1="-494.62384"
+     y2="-558.6239"
      id="line39939" />
   <circle
-     cx="1896.446"
-     cy="-37.224754"
+     cx="1900.7264"
+     cy="-558.6239"
      fill="#000000"
      r="4"
      id="circle39941" />
@@ -706,24 +873,24 @@
      stroke="#000000"
      stroke-width="2"
      width="75"
-     x="1859.446"
-     y="14.775246"
+     x="1863.7264"
+     y="-506.62387"
      id="rect39943" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="1867.446"
-     y="31.775246"
+     x="1871.7264"
+     y="-489.62384"
      id="text39945">PH [π/4]</text>
   <line
      stroke="#000000"
-     x1="1981.446"
-     x2="1981.446"
-     y1="58.775276"
-     y2="-37.224754"
+     x1="1985.7264"
+     x2="1985.7264"
+     y1="-462.62378"
+     y2="-558.6239"
      id="line39947" />
   <circle
-     cx="1981.446"
-     cy="-37.224754"
+     cx="1985.7264"
+     cy="-558.6239"
      fill="#000000"
      r="4"
      id="circle39949" />
@@ -733,24 +900,24 @@
      stroke="#000000"
      stroke-width="2"
      width="75"
-     x="1944.446"
-     y="46.775246"
+     x="1948.7264"
+     y="-474.62384"
      id="rect39951" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="1952.446"
-     y="63.775276"
+     x="1956.7264"
+     y="-457.62378"
      id="text39953">PH [π/8]</text>
   <line
      stroke="#000000"
-     x1="2070.446"
-     x2="2070.446"
-     y1="90.775276"
-     y2="-37.224754"
+     x1="2074.7266"
+     x2="2074.7266"
+     y1="-430.62378"
+     y2="-558.6239"
      id="line39955" />
   <circle
-     cx="2070.446"
-     cy="-37.224754"
+     cx="2074.7266"
+     cy="-558.6239"
      fill="#000000"
      r="4"
      id="circle39957" />
@@ -760,24 +927,24 @@
      stroke="#000000"
      stroke-width="2"
      width="83"
-     x="2029.446"
-     y="78.775276"
+     x="2033.7264"
+     y="-442.62378"
      id="rect39959" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="2037.446"
-     y="95.775276"
+     x="2041.7264"
+     y="-425.62378"
      id="text39961">PH [π/16]</text>
   <line
      stroke="#000000"
-     x1="2163.446"
-     x2="2163.446"
-     y1="122.77528"
-     y2="-37.224754"
+     x1="2167.7266"
+     x2="2167.7266"
+     y1="-398.62378"
+     y2="-558.6239"
      id="line39963" />
   <circle
-     cx="2163.446"
-     cy="-37.224754"
+     cx="2167.7266"
+     cy="-558.6239"
      fill="#000000"
      r="4"
      id="circle39965" />
@@ -787,24 +954,24 @@
      stroke="#000000"
      stroke-width="2"
      width="83"
-     x="2122.446"
-     y="110.77528"
+     x="2126.7266"
+     y="-410.62378"
      id="rect39967" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="2130.446"
-     y="127.77531"
+     x="2134.7266"
+     y="-393.62375"
      id="text39969">PH [π/32]</text>
   <line
      stroke="#000000"
-     x1="2256.446"
-     x2="2256.446"
-     y1="154.7753"
-     y2="-37.224754"
+     x1="2260.7266"
+     x2="2260.7266"
+     y1="-366.62375"
+     y2="-558.6239"
      id="line39971" />
   <circle
-     cx="2256.446"
-     cy="-37.224754"
+     cx="2260.7266"
+     cy="-558.6239"
      fill="#000000"
      r="4"
      id="circle39973" />
@@ -814,24 +981,24 @@
      stroke="#000000"
      stroke-width="2"
      width="83"
-     x="2215.446"
-     y="142.7753"
+     x="2219.7266"
+     y="-378.62375"
      id="rect39975" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="2223.446"
-     y="159.77531"
+     x="2227.7266"
+     y="-361.62375"
      id="text39977">PH [π/64]</text>
   <line
      stroke="#000000"
-     x1="2353.446"
-     x2="2353.446"
-     y1="186.77525"
-     y2="-37.224754"
+     x1="2357.7266"
+     x2="2357.7266"
+     y1="-334.62381"
+     y2="-558.6239"
      id="line39979" />
   <circle
-     cx="2353.446"
-     cy="-37.224754"
+     cx="2357.7266"
+     cy="-558.6239"
      fill="#000000"
      r="4"
      id="circle39981" />
@@ -841,13 +1008,13 @@
      stroke="#000000"
      stroke-width="2"
      width="91"
-     x="2308.446"
-     y="174.77528"
+     x="2312.7266"
+     y="-346.62378"
      id="rect39983" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="2316.446"
-     y="191.77524"
+     x="2320.7266"
+     y="-329.62381"
      id="text39985">PH [π/128]</text>
   <rect
      fill="#ffffff"
@@ -855,24 +1022,24 @@
      stroke="#000000"
      stroke-width="2"
      width="30"
-     x="2409.446"
-     y="-17.224754"
+     x="2413.7266"
+     y="-538.6239"
      id="rect39987" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="2417.446"
-     y="-0.22475475"
+     x="2421.7266"
+     y="-521.6239"
      id="text39989">H</text>
   <line
      stroke="#000000"
-     x1="2486.446"
-     x2="2486.446"
-     y1="26.775246"
-     y2="-5.2247548"
+     x1="2490.7266"
+     x2="2490.7266"
+     y1="-494.62384"
+     y2="-526.6239"
      id="line39991" />
   <circle
-     cx="2486.446"
-     cy="-5.2247548"
+     cx="2490.7266"
+     cy="-526.6239"
      fill="#000000"
      r="4"
      id="circle39993" />
@@ -882,24 +1049,24 @@
      stroke="#000000"
      stroke-width="2"
      width="75"
-     x="2449.446"
-     y="14.775246"
+     x="2453.7266"
+     y="-506.62387"
      id="rect39995" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="2457.446"
-     y="31.775246"
+     x="2461.7266"
+     y="-489.62384"
      id="text39997">PH [π/2]</text>
   <line
      stroke="#000000"
-     x1="2571.446"
-     x2="2571.446"
-     y1="58.775276"
-     y2="-5.2247548"
+     x1="2575.7266"
+     x2="2575.7266"
+     y1="-462.62378"
+     y2="-526.6239"
      id="line39999" />
   <circle
-     cx="2571.446"
-     cy="-5.2247548"
+     cx="2575.7266"
+     cy="-526.6239"
      fill="#000000"
      r="4"
      id="circle40001" />
@@ -909,24 +1076,24 @@
      stroke="#000000"
      stroke-width="2"
      width="75"
-     x="2534.446"
-     y="46.775246"
+     x="2538.7266"
+     y="-474.62384"
      id="rect40003" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="2542.446"
-     y="63.775276"
+     x="2546.7266"
+     y="-457.62378"
      id="text40005">PH [π/4]</text>
   <line
      stroke="#000000"
-     x1="2656.446"
-     x2="2656.446"
-     y1="90.775276"
-     y2="-5.2247548"
+     x1="2660.7266"
+     x2="2660.7266"
+     y1="-430.62378"
+     y2="-526.6239"
      id="line40007" />
   <circle
-     cx="2656.446"
-     cy="-5.2247548"
+     cx="2660.7266"
+     cy="-526.6239"
      fill="#000000"
      r="4"
      id="circle40009" />
@@ -936,24 +1103,24 @@
      stroke="#000000"
      stroke-width="2"
      width="75"
-     x="2619.446"
-     y="78.775276"
+     x="2623.7266"
+     y="-442.62378"
      id="rect40011" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="2627.446"
-     y="95.775276"
+     x="2631.7266"
+     y="-425.62378"
      id="text40013">PH [π/8]</text>
   <line
      stroke="#000000"
-     x1="2745.446"
-     x2="2745.446"
-     y1="122.77528"
-     y2="-5.2247548"
+     x1="2749.7266"
+     x2="2749.7266"
+     y1="-398.62378"
+     y2="-526.6239"
      id="line40015" />
   <circle
-     cx="2745.446"
-     cy="-5.2247548"
+     cx="2749.7266"
+     cy="-526.6239"
      fill="#000000"
      r="4"
      id="circle40017" />
@@ -963,24 +1130,24 @@
      stroke="#000000"
      stroke-width="2"
      width="83"
-     x="2704.446"
-     y="110.77528"
+     x="2708.7266"
+     y="-410.62378"
      id="rect40019" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="2712.446"
-     y="127.77531"
+     x="2716.7266"
+     y="-393.62375"
      id="text40021">PH [π/16]</text>
   <line
      stroke="#000000"
-     x1="2838.446"
-     x2="2838.446"
-     y1="154.7753"
-     y2="-5.2247548"
+     x1="2842.7266"
+     x2="2842.7266"
+     y1="-366.62375"
+     y2="-526.6239"
      id="line40023" />
   <circle
-     cx="2838.446"
-     cy="-5.2247548"
+     cx="2842.7266"
+     cy="-526.6239"
      fill="#000000"
      r="4"
      id="circle40025" />
@@ -990,24 +1157,24 @@
      stroke="#000000"
      stroke-width="2"
      width="83"
-     x="2797.446"
-     y="142.7753"
+     x="2801.7266"
+     y="-378.62375"
      id="rect40027" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="2805.446"
-     y="159.77531"
+     x="2809.7266"
+     y="-361.62375"
      id="text40029">PH [π/32]</text>
   <line
      stroke="#000000"
-     x1="2931.446"
-     x2="2931.446"
-     y1="186.77525"
-     y2="-5.2247548"
+     x1="2935.7266"
+     x2="2935.7266"
+     y1="-334.62381"
+     y2="-526.6239"
      id="line40031" />
   <circle
-     cx="2931.446"
-     cy="-5.2247548"
+     cx="2935.7266"
+     cy="-526.6239"
      fill="#000000"
      r="4"
      id="circle40033" />
@@ -1017,13 +1184,13 @@
      stroke="#000000"
      stroke-width="2"
      width="83"
-     x="2890.446"
-     y="174.77528"
+     x="2894.7266"
+     y="-346.62378"
      id="rect40035" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="2898.446"
-     y="191.77524"
+     x="2902.7266"
+     y="-329.62381"
      id="text40037">PH [π/64]</text>
   <rect
      fill="#ffffff"
@@ -1031,24 +1198,24 @@
      stroke="#000000"
      stroke-width="2"
      width="30"
-     x="2983.446"
-     y="14.775246"
+     x="2987.7266"
+     y="-506.62387"
      id="rect40039" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="2991.446"
-     y="31.775246"
+     x="2995.7266"
+     y="-489.62384"
      id="text40041">H</text>
   <line
      stroke="#000000"
-     x1="3060.446"
-     x2="3060.446"
-     y1="58.775276"
-     y2="26.775246"
+     x1="3064.7266"
+     x2="3064.7266"
+     y1="-462.62378"
+     y2="-494.62384"
      id="line40043" />
   <circle
-     cx="3060.446"
-     cy="26.775246"
+     cx="3064.7266"
+     cy="-494.62384"
      fill="#000000"
      r="4"
      id="circle40045" />
@@ -1058,24 +1225,24 @@
      stroke="#000000"
      stroke-width="2"
      width="75"
-     x="3023.446"
-     y="46.775246"
+     x="3027.7266"
+     y="-474.62384"
      id="rect40047" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="3031.446"
-     y="63.775276"
+     x="3035.7266"
+     y="-457.62378"
      id="text40049">PH [π/2]</text>
   <line
      stroke="#000000"
-     x1="3145.446"
-     x2="3145.446"
-     y1="90.775276"
-     y2="26.775246"
+     x1="3149.7266"
+     x2="3149.7266"
+     y1="-430.62378"
+     y2="-494.62384"
      id="line40051" />
   <circle
-     cx="3145.446"
-     cy="26.775246"
+     cx="3149.7266"
+     cy="-494.62384"
      fill="#000000"
      r="4"
      id="circle40053" />
@@ -1085,24 +1252,24 @@
      stroke="#000000"
      stroke-width="2"
      width="75"
-     x="3108.446"
-     y="78.775276"
+     x="3112.7266"
+     y="-442.62378"
      id="rect40055" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="3116.446"
-     y="95.775276"
+     x="3120.7266"
+     y="-425.62378"
      id="text40057">PH [π/4]</text>
   <line
      stroke="#000000"
-     x1="3230.446"
-     x2="3230.446"
-     y1="122.77528"
-     y2="26.775246"
+     x1="3234.7266"
+     x2="3234.7266"
+     y1="-398.62378"
+     y2="-494.62384"
      id="line40059" />
   <circle
-     cx="3230.446"
-     cy="26.775246"
+     cx="3234.7266"
+     cy="-494.62384"
      fill="#000000"
      r="4"
      id="circle40061" />
@@ -1112,24 +1279,24 @@
      stroke="#000000"
      stroke-width="2"
      width="75"
-     x="3193.446"
-     y="110.77528"
+     x="3197.7266"
+     y="-410.62378"
      id="rect40063" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="3201.446"
-     y="127.77531"
+     x="3205.7266"
+     y="-393.62375"
      id="text40065">PH [π/8]</text>
   <line
      stroke="#000000"
-     x1="3319.446"
-     x2="3319.446"
-     y1="154.7753"
-     y2="26.775246"
+     x1="3323.7266"
+     x2="3323.7266"
+     y1="-366.62375"
+     y2="-494.62384"
      id="line40067" />
   <circle
-     cx="3319.446"
-     cy="26.775246"
+     cx="3323.7266"
+     cy="-494.62384"
      fill="#000000"
      r="4"
      id="circle40069" />
@@ -1139,24 +1306,24 @@
      stroke="#000000"
      stroke-width="2"
      width="83"
-     x="3278.446"
-     y="142.7753"
+     x="3282.7266"
+     y="-378.62375"
      id="rect40071" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="3286.446"
-     y="159.77531"
+     x="3290.7266"
+     y="-361.62375"
      id="text40073">PH [π/16]</text>
   <line
      stroke="#000000"
-     x1="3412.446"
-     x2="3412.446"
-     y1="186.77525"
-     y2="26.775246"
+     x1="3416.7266"
+     x2="3416.7266"
+     y1="-334.62381"
+     y2="-494.62384"
      id="line40075" />
   <circle
-     cx="3412.446"
-     cy="26.775246"
+     cx="3416.7266"
+     cy="-494.62384"
      fill="#000000"
      r="4"
      id="circle40077" />
@@ -1166,13 +1333,13 @@
      stroke="#000000"
      stroke-width="2"
      width="83"
-     x="3371.446"
-     y="174.77528"
+     x="3375.7266"
+     y="-346.62378"
      id="rect40079" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="3379.446"
-     y="191.77524"
+     x="3383.7266"
+     y="-329.62381"
      id="text40081">PH [π/32]</text>
   <rect
      fill="#ffffff"
@@ -1180,24 +1347,24 @@
      stroke="#000000"
      stroke-width="2"
      width="30"
-     x="3464.446"
-     y="46.775246"
+     x="3468.7266"
+     y="-474.62384"
      id="rect40083" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="3472.446"
-     y="63.775276"
+     x="3476.7266"
+     y="-457.62378"
      id="text40085">H</text>
   <line
      stroke="#000000"
-     x1="3541.446"
-     x2="3541.446"
-     y1="90.775276"
-     y2="58.775276"
+     x1="3545.7266"
+     x2="3545.7266"
+     y1="-430.62378"
+     y2="-462.62378"
      id="line40087" />
   <circle
-     cx="3541.446"
-     cy="58.775276"
+     cx="3545.7266"
+     cy="-462.62378"
      fill="#000000"
      r="4"
      id="circle40089" />
@@ -1207,24 +1374,24 @@
      stroke="#000000"
      stroke-width="2"
      width="75"
-     x="3504.446"
-     y="78.775276"
+     x="3508.7266"
+     y="-442.62378"
      id="rect40091" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="3512.446"
-     y="95.775276"
+     x="3516.7266"
+     y="-425.62378"
      id="text40093">PH [π/2]</text>
   <line
      stroke="#000000"
-     x1="3626.446"
-     x2="3626.446"
-     y1="122.77528"
-     y2="58.775276"
+     x1="3630.7266"
+     x2="3630.7266"
+     y1="-398.62378"
+     y2="-462.62378"
      id="line40095" />
   <circle
-     cx="3626.446"
-     cy="58.775276"
+     cx="3630.7266"
+     cy="-462.62378"
      fill="#000000"
      r="4"
      id="circle40097" />
@@ -1234,24 +1401,24 @@
      stroke="#000000"
      stroke-width="2"
      width="75"
-     x="3589.446"
-     y="110.77528"
+     x="3593.7266"
+     y="-410.62378"
      id="rect40099" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="3597.446"
-     y="127.77531"
+     x="3601.7266"
+     y="-393.62375"
      id="text40101">PH [π/4]</text>
   <line
      stroke="#000000"
-     x1="3711.446"
-     x2="3711.446"
-     y1="154.7753"
-     y2="58.775276"
+     x1="3715.7266"
+     x2="3715.7266"
+     y1="-366.62375"
+     y2="-462.62378"
      id="line40103" />
   <circle
-     cx="3711.446"
-     cy="58.775276"
+     cx="3715.7266"
+     cy="-462.62378"
      fill="#000000"
      r="4"
      id="circle40105" />
@@ -1261,24 +1428,24 @@
      stroke="#000000"
      stroke-width="2"
      width="75"
-     x="3674.446"
-     y="142.7753"
+     x="3678.7266"
+     y="-378.62375"
      id="rect40107" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="3682.446"
-     y="159.77531"
+     x="3686.7266"
+     y="-361.62375"
      id="text40109">PH [π/8]</text>
   <line
      stroke="#000000"
-     x1="3800.446"
-     x2="3800.446"
-     y1="186.77525"
-     y2="58.775276"
+     x1="3804.7266"
+     x2="3804.7266"
+     y1="-334.62381"
+     y2="-462.62378"
      id="line40111" />
   <circle
-     cx="3800.446"
-     cy="58.775276"
+     cx="3804.7266"
+     cy="-462.62378"
      fill="#000000"
      r="4"
      id="circle40113" />
@@ -1288,13 +1455,13 @@
      stroke="#000000"
      stroke-width="2"
      width="83"
-     x="3759.446"
-     y="174.77528"
+     x="3763.7266"
+     y="-346.62378"
      id="rect40115" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="3767.446"
-     y="191.77524"
+     x="3771.7266"
+     y="-329.62381"
      id="text40117">PH [π/16]</text>
   <rect
      fill="#ffffff"
@@ -1302,24 +1469,24 @@
      stroke="#000000"
      stroke-width="2"
      width="30"
-     x="3852.446"
-     y="78.775276"
+     x="3856.7266"
+     y="-442.62378"
      id="rect40119" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="3860.446"
-     y="95.775276"
+     x="3864.7266"
+     y="-425.62378"
      id="text40121">H</text>
   <line
      stroke="#000000"
-     x1="3929.446"
-     x2="3929.446"
-     y1="122.77528"
-     y2="90.775276"
+     x1="3933.7266"
+     x2="3933.7266"
+     y1="-398.62378"
+     y2="-430.62378"
      id="line40123" />
   <circle
-     cx="3929.446"
-     cy="90.775276"
+     cx="3933.7266"
+     cy="-430.62378"
      fill="#000000"
      r="4"
      id="circle40125" />
@@ -1329,24 +1496,24 @@
      stroke="#000000"
      stroke-width="2"
      width="75"
-     x="3892.446"
-     y="110.77528"
+     x="3896.7266"
+     y="-410.62378"
      id="rect40127" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="3900.446"
-     y="127.77531"
+     x="3904.7266"
+     y="-393.62375"
      id="text40129">PH [π/2]</text>
   <line
      stroke="#000000"
-     x1="4014.446"
-     x2="4014.446"
-     y1="154.7753"
-     y2="90.775276"
+     x1="4018.7266"
+     x2="4018.7266"
+     y1="-366.62375"
+     y2="-430.62378"
      id="line40131" />
   <circle
-     cx="4014.446"
-     cy="90.775276"
+     cx="4018.7266"
+     cy="-430.62378"
      fill="#000000"
      r="4"
      id="circle40133" />
@@ -1356,24 +1523,24 @@
      stroke="#000000"
      stroke-width="2"
      width="75"
-     x="3977.446"
-     y="142.7753"
+     x="3981.7266"
+     y="-378.62375"
      id="rect40135" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="3985.446"
-     y="159.77531"
+     x="3989.7266"
+     y="-361.62375"
      id="text40137">PH [π/4]</text>
   <line
      stroke="#000000"
-     x1="4099.4458"
-     x2="4099.4458"
-     y1="186.77525"
-     y2="90.775276"
+     x1="4103.7261"
+     x2="4103.7261"
+     y1="-334.62381"
+     y2="-430.62378"
      id="line40139" />
   <circle
-     cx="4099.4458"
-     cy="90.775276"
+     cx="4103.7261"
+     cy="-430.62378"
      fill="#000000"
      r="4"
      id="circle40141" />
@@ -1383,13 +1550,13 @@
      stroke="#000000"
      stroke-width="2"
      width="75"
-     x="4062.446"
-     y="174.77528"
+     x="4066.7266"
+     y="-346.62378"
      id="rect40143" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="4070.446"
-     y="191.77524"
+     x="4074.7266"
+     y="-329.62381"
      id="text40145">PH [π/8]</text>
   <rect
      fill="#ffffff"
@@ -1397,24 +1564,24 @@
      stroke="#000000"
      stroke-width="2"
      width="30"
-     x="4147.4458"
-     y="110.77528"
+     x="4151.7261"
+     y="-410.62378"
      id="rect40147" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="4155.4458"
-     y="127.77531"
+     x="4159.7261"
+     y="-393.62375"
      id="text40149">H</text>
   <line
      stroke="#000000"
-     x1="4224.4458"
-     x2="4224.4458"
-     y1="154.7753"
-     y2="122.77528"
+     x1="4228.7261"
+     x2="4228.7261"
+     y1="-366.62375"
+     y2="-398.62378"
      id="line40151" />
   <circle
-     cx="4224.4458"
-     cy="122.77528"
+     cx="4228.7261"
+     cy="-398.62378"
      fill="#000000"
      r="4"
      id="circle40153" />
@@ -1424,24 +1591,24 @@
      stroke="#000000"
      stroke-width="2"
      width="75"
-     x="4187.4458"
-     y="142.7753"
+     x="4191.7261"
+     y="-378.62375"
      id="rect40155" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="4195.4458"
-     y="159.77531"
+     x="4199.7261"
+     y="-361.62375"
      id="text40157">PH [π/2]</text>
   <line
      stroke="#000000"
-     x1="4309.4458"
-     x2="4309.4458"
-     y1="186.77525"
-     y2="122.77528"
+     x1="4313.7261"
+     x2="4313.7261"
+     y1="-334.62381"
+     y2="-398.62378"
      id="line40159" />
   <circle
-     cx="4309.4458"
-     cy="122.77528"
+     cx="4313.7261"
+     cy="-398.62378"
      fill="#000000"
      r="4"
      id="circle40161" />
@@ -1451,13 +1618,13 @@
      stroke="#000000"
      stroke-width="2"
      width="75"
-     x="4272.4458"
-     y="174.77528"
+     x="4276.7261"
+     y="-346.62378"
      id="rect40163" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="4280.4458"
-     y="191.77524"
+     x="4284.7261"
+     y="-329.62381"
      id="text40165">PH [π/4]</text>
   <rect
      fill="#ffffff"
@@ -1465,24 +1632,24 @@
      stroke="#000000"
      stroke-width="2"
      width="30"
-     x="4357.4458"
-     y="142.7753"
+     x="4361.7261"
+     y="-378.62375"
      id="rect40167" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="4365.4458"
-     y="159.77531"
+     x="4369.7261"
+     y="-361.62375"
      id="text40169">H</text>
   <line
      stroke="#000000"
-     x1="4434.4458"
-     x2="4434.4458"
-     y1="186.77525"
-     y2="154.7753"
+     x1="4438.7261"
+     x2="4438.7261"
+     y1="-334.62381"
+     y2="-366.62375"
      id="line40171" />
   <circle
-     cx="4434.4458"
-     cy="154.7753"
+     cx="4438.7261"
+     cy="-366.62375"
      fill="#000000"
      r="4"
      id="circle40173" />
@@ -1492,13 +1659,13 @@
      stroke="#000000"
      stroke-width="2"
      width="75"
-     x="4397.4458"
-     y="174.77528"
+     x="4401.7261"
+     y="-346.62378"
      id="rect40175" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="4405.4458"
-     y="191.77524"
+     x="4409.7261"
+     y="-329.62381"
      id="text40177">PH [π/2]</text>
   <rect
      fill="#ffffff"
@@ -1506,12 +1673,282 @@
      stroke="#000000"
      stroke-width="2"
      width="30"
-     x="4482.4458"
-     y="174.77528"
+     x="4486.7261"
+     y="-346.62378"
      id="rect40179" />
   <text
      style="font-size:16px;font-family:STIXMathJax_Main-Italic"
-     x="4490.4458"
-     y="191.77524"
+     x="4494.7261"
+     y="-329.62381"
      id="text40181">H</text>
+  <rect
+     style="fill:none;stroke:#d40000;stroke-width:6.60373"
+     id="rect40730"
+     width="454.87875"
+     height="173.52805"
+     x="14.981319"
+     y="-650.16479" />
+  <g
+     id="g43290"
+     transform="matrix(6.1162187,0,0,6.1151194,-358.78195,-667.03035)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.2545;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 151.83252,231.12847 c 86.33708,0 172.67038,0 258.99993,0"
+       id="path42196-7-3-4-8-2"
+       inkscape:path-effect="#path-effect43238"
+       inkscape:original-d="m 151.83252,231.12847 c 86.33708,0.004 172.67038,0.004 258.99993,0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.2545;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 220.14671,231.23417 c 86.33708,0 172.67038,0 258.99993,0"
+       id="path42196-2-1-8-8"
+       inkscape:path-effect="#path-effect43242"
+       inkscape:original-d="m 220.14671,231.23417 c 86.33708,0.004 172.67038,0.004 258.99993,0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.2545;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 272.26791,231.43335 c 86.33708,0 172.67038,0 258.99993,0"
+       id="path42196-4-6-2-9-8"
+       inkscape:path-effect="#path-effect43246"
+       inkscape:original-d="m 272.26791,231.43335 c 86.33708,0.004 172.67038,0.004 258.99993,0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.2545;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 150.36076,196.11013 c 86.33708,0 172.67038,0 258.99993,0"
+       id="path42196-7-3-4-8"
+       inkscape:path-effect="#path-effect43175"
+       inkscape:original-d="m 150.36076,196.11013 c 86.33708,0.004 172.67038,0.004 258.99993,0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.2545;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 218.67495,196.21583 c 86.33708,0 172.67038,0 258.99993,0"
+       id="path42196-2-1-8"
+       inkscape:path-effect="#path-effect43179"
+       inkscape:original-d="m 218.67495,196.21583 c 86.33708,0.004 172.67038,0.004 258.99993,0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.2545;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 270.79615,196.41501 c 86.33708,0 172.67038,0 258.99993,0"
+       id="path42196-4-6-2-9"
+       inkscape:path-effect="#path-effect43183"
+       inkscape:original-d="m 270.79615,196.41501 c 86.33708,0.004 172.67038,0.004 258.99993,0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.2545;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 150.71436,167.50224 c 86.33708,0 172.67038,0 258.99993,0"
+       id="path42196-7-3-4"
+       inkscape:path-effect="#path-effect43112"
+       inkscape:original-d="m 150.71436,167.50224 c 86.33708,0.004 172.67038,0.004 258.99993,0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.2545;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 219.02855,167.60794 c 86.33708,0 172.67038,0 258.99993,0"
+       id="path42196-2-1"
+       inkscape:path-effect="#path-effect43116"
+       inkscape:original-d="m 219.02855,167.60794 c 86.33708,0.004 172.67038,0.004 258.99993,0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.2545;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 271.14975,167.80712 c 86.33708,0 172.67038,0 258.99993,0"
+       id="path42196-4-6-2"
+       inkscape:path-effect="#path-effect43120"
+       inkscape:original-d="m 271.14975,167.80712 c 86.33708,0.004 172.67038,0.004 258.99993,0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.2545;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 149.82437,136.30905 c 86.33708,0 172.67038,0 258.99993,0"
+       id="path42196-7-3"
+       inkscape:path-effect="#path-effect42643"
+       inkscape:original-d="m 149.82437,136.30905 c 86.33708,0.004 172.67038,0.004 258.99993,0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.2545;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 218.13856,136.41475 c 86.33708,0 172.67038,0 258.99993,0"
+       id="path42196-2"
+       inkscape:path-effect="#path-effect42647"
+       inkscape:original-d="m 218.13856,136.41475 c 86.33708,0.004 172.67038,0.004 258.99993,0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.2545;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 270.25976,136.61393 c 86.33708,0 172.67038,0 258.99993,0"
+       id="path42196-4-6"
+       inkscape:path-effect="#path-effect42651"
+       inkscape:original-d="m 270.25976,136.61393 c 86.33708,0.004 172.67038,0.004 258.99993,0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.2545;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 154.46521,103.09154 c 86.33708,0 172.67038,0 258.99993,0"
+       id="path42196-7"
+       inkscape:path-effect="#path-effect42525"
+       inkscape:original-d="m 154.46521,103.09154 c 86.33708,0.004 172.67038,0.004 258.99993,0"
+       sodipodi:nodetypes="cc" />
+    <text
+       style="font-size:16px;font-family:STIXMathJax_Main-Italic"
+       x="95.779388"
+       y="108.19727"
+       id="text39743-0">Q0</text>
+    <text
+       style="font-size:16px;font-family:STIXMathJax_Main-Italic"
+       x="95.779388"
+       y="140.19733"
+       id="text39747-2">Q1</text>
+    <text
+       style="font-size:16px;font-family:STIXMathJax_Main-Italic"
+       x="95.779388"
+       y="172.19733"
+       id="text39751-1">Q2</text>
+    <text
+       style="font-size:16px;font-family:STIXMathJax_Main-Italic"
+       x="95.779388"
+       y="204.19733"
+       id="text39755-0">Q3</text>
+    <text
+       style="font-size:16px;font-family:STIXMathJax_Main-Italic"
+       x="95.779388"
+       y="236.19733"
+       id="text39759-5">Q4</text>
+    <rect
+       fill="#ffffff"
+       height="24"
+       stroke="#000000"
+       stroke-width="2"
+       width="30"
+       x="145.77939"
+       y="91.197205"
+       id="rect39783-1" />
+    <text
+       style="font-size:16px;font-family:STIXMathJax_Main-Italic"
+       x="153.77939"
+       y="108.19727"
+       id="text39785-0">H</text>
+    <line
+       stroke="#000000"
+       x1="222.7794"
+       x2="222.7794"
+       y1="135.1973"
+       y2="103.19724"
+       id="line39787-8" />
+    <circle
+       cx="222.7794"
+       cy="103.19724"
+       fill="#000000"
+       r="4"
+       id="circle39789-5" />
+    <rect
+       fill="#ffffff"
+       height="24"
+       stroke="#000000"
+       stroke-width="2"
+       width="75"
+       x="185.77939"
+       y="123.1973"
+       id="rect39791-0" />
+    <text
+       style="font-size:16px;font-family:STIXMathJax_Main-Italic"
+       x="193.7794"
+       y="140.19733"
+       id="text39793-6">PH [π/2]</text>
+    <line
+       stroke="#000000"
+       x1="307.77939"
+       x2="307.77939"
+       y1="167.19733"
+       y2="103.19724"
+       id="line39795-4" />
+    <circle
+       cx="307.77939"
+       cy="103.19724"
+       fill="#000000"
+       r="4"
+       id="circle39797-6" />
+    <rect
+       fill="#ffffff"
+       height="24"
+       stroke="#000000"
+       stroke-width="2"
+       width="75"
+       x="270.77939"
+       y="155.19733"
+       id="rect39799-2" />
+    <text
+       style="font-size:16px;font-family:STIXMathJax_Main-Italic"
+       x="278.77939"
+       y="172.19733"
+       id="text39801-5">PH [π/4]</text>
+    <line
+       stroke="#000000"
+       x1="392.77936"
+       x2="392.77936"
+       y1="199.19733"
+       y2="103.19724"
+       id="line39803-8" />
+    <circle
+       cx="392.77936"
+       cy="103.19724"
+       fill="#000000"
+       r="4"
+       id="circle39805-6" />
+    <rect
+       fill="#ffffff"
+       height="24"
+       stroke="#000000"
+       stroke-width="2"
+       width="75"
+       x="355.77936"
+       y="187.19733"
+       id="rect39807-2" />
+    <text
+       style="font-size:16px;font-family:STIXMathJax_Main-Italic"
+       x="363.77936"
+       y="204.19733"
+       id="text39809-8">PH [π/8]</text>
+    <line
+       stroke="#000000"
+       x1="481.77933"
+       x2="481.77933"
+       y1="231.19733"
+       y2="103.19724"
+       id="line39811-4" />
+    <circle
+       cx="481.77933"
+       cy="103.19724"
+       fill="#000000"
+       r="4"
+       id="circle39813-7" />
+    <rect
+       fill="#ffffff"
+       height="24"
+       stroke="#000000"
+       stroke-width="2"
+       width="83"
+       x="440.77936"
+       y="219.19733"
+       id="rect39815-2" />
+    <text
+       style="font-size:16px;font-family:STIXMathJax_Main-Italic"
+       x="448.77936"
+       y="236.19733"
+       id="text39817-4">PH [π/16]</text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.2545;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 222.7794,103.19724 c 86.33708,0 172.67038,0 258.99993,0"
+       id="path42196"
+       inkscape:path-effect="#path-effect42198"
+       inkscape:original-d="m 222.7794,103.19724 c 86.33708,0.004 172.67038,0.004 258.99993,0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.2545;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 274.9006,103.39642 c 86.33708,0 172.67038,0 258.99993,0"
+       id="path42196-4"
+       inkscape:path-effect="#path-effect42560"
+       inkscape:original-d="m 274.9006,103.39642 c 86.33708,0.004 172.67038,0.004 258.99993,0"
+       sodipodi:nodetypes="cc" />
+    <rect
+       style="fill:none;stroke:#d40000;stroke-width:6.60373"
+       id="rect40730-2"
+       width="454.87875"
+       height="173.52805"
+       x="82.549255"
+       y="83.171463" />
+  </g>
 </svg>
