@@ -5,17 +5,24 @@
 \usepackage{tikz}
 \usepackage{amsfonts}
 \usepackage{color}
+\usepackage{hyperref}
+
+\title{Lecture notes \\
+Technologies quantiques, introduction à l'algorithmie quantique}
+
+\author{Bertrand Marchand \\ bertrand.marchand@lix.polytechnique.fr}
 
 \begin{document}
+\maketitle
 \tableofcontents
 \section{The computational model: quantum circuits}
 
-\subsection{references}
+\subsection{References}
 
 \begin{itemize}
-    \item Nielsen and Chuang - \emph{Quantum computation and quantum information}.
-    \item quantum algorithms with a particular focus on quantum machine learning: \textcolor{blue}{quantumalgorithms.org}
-    \item \textcolor{blue}{quantumalgorithmzoo.org}
+    \item Nielsen and Chuang - \emph{Quantum computation and quantum information} - \textcolor{blue}{\href{http://mmrc.amss.cas.cn/tlb/201702/W020170224608149940643.pdf}{free online pdf}}
+    \item quantum algorithms with a particular focus on quantum machine learning: \textcolor{blue}{\href{https://quantumalgorithms.org/}{https://quantumalgorithms.org/}}
+    \item \textcolor{blue}{\href{https://quantumalgorithmzoo.org/}{https://quantumalgorithmzoo.org/}}
 \end{itemize}
 
 \subsection{qubits}
@@ -38,56 +45,94 @@ And the Hilbert space associated to a quatum computer, i.e. the space of all pos
 \end{align*}
 
 Above, $|i\rangle$, with $i$ integer denotes the state $\otimes_{i=1}^{n} |b_i\rangle $ with $b_i$ the $i$-th\footnote{or $(n-i)$-th bit, depending on the
-convention.} bit in the binary decomposition of $i$. For small values of $n$, the states are typically written with bits directly.
+convention. In this lecture, we work with the convention that $i = \sum_{k} b_k 2^k$} bit in the binary decomposition of $i$. For small values of $n$, the states are typically written with bits directly.
 
-\paragraph{dimension} The dimension of the Hilbert space of a quantum computer with $n$ qubits is therefore $2^n$.
+\paragraph{Definition - state vector} The vector $[a_i]_{0\leq i \leq 2^n-1}$ of all amplitudes 
+is typically called the state vector of the quantum computer.
+
+\paragraph{Remark 1 - dimension} The dimension of the Hilbert space of a quantum computer with $n$ qubits is therefore $2^n$.
 So about $30$ qbits can be hold in RAM on a laptop.
 
-\paragraph{Initialization} By convention, at the beginning of a quantum computation, the qubits are initialized at $|0\dots 0\rangle$.
+\paragraph{Remark 2 - initialization} By convention, at the beginning of a quantum computation, the qubits are initialized at $|0\dots 0\rangle$.
 
-\paragraph{Measure} As usual, $|a_i|^2$ denotes the probability of observing $i$ when measuring the state of all qubits.
+\paragraph{Remark 3 - measure} As usual, $|a_i|^2$ denotes the probability of observing $i$ when measuring the state of all qubits.
 I.e. the probability that qubit 1 is measured in state $b_1$, qubit 2 in state $b_2$, etc.
 
-\subsection{quantum gates} 
+\subsection{Quantum gates} 
 
 A quantum computer is a \emph{closed} system, thereby following Hamiltonian/unitary dynamics, as per Schr\"{o}dinger's equation.
 
-(dynamics that are in particular reversible)
+\paragraph{Definition - quantum gates} When using a quantum computer, 
+we modify its state through the application of unitary operations called \emph{quantum gates}. 
+These quantum gates act on the state vector through standard matrix multiplications\footnote{$U$ is therefore a 
+$2^n\times 2^n$ matrix}:
+$$|\psi\rangle\xrightarrow[\text{quantum gate }U]{}U|\psi\rangle$$
 
-When using a quantum computer, we modify its state through the application of unitary operations called \emph{quantum gates}. 
-These quantum gates are typically drawn from a fixed \emph{gate set}, containing gates each involving only a small number of qubits at a time.
+Quantum gates are almost always \emph{local}, they act non-trivially on a limited number of qubits,
+while the identity is applied to the other qubits. Mathematically, the overall operation is 
+a \emph{tensor product} of a ``small unitary matrix'' applied on some qubits, tensored with 
+identity applied on the others. For instance, a 1-qubit gate $U$ applied on qubit 0 of a system
+of $3$ qubits corresponds to the operation:
+$$ |\psi\rangle \xrightarrow[]{} (U\otimes I \otimes I) |\psi\rangle $$\footnote{$I$ is here
+a $2\times 2$ identity matrix, making $U\otimes I\otimes I$ an $8\times 8$ matrix.}
 
-\paragraph{Definition - (universal gate set)} A quantum computer comes with a \emph{gate set}, a set of unitary operations
-involving a few qubits at a time. A universal gate set is able to generate any unitary operation.
 
+\paragraph{Definition - universal gate set} A quantum computer
+typically comes with a \emph{gate set}, a set of unitary operations
+involving only a few qubits at a time capable of ``generating 
+any other unitary operation''. 
 Universal gate set are universal in light of the Solovay-Kitaev theorem.
 
-\paragraph{Analogy with classical case} Instruction sets for processors.
+\paragraph{Remark 1 - analogy with classical case} CPU chips (micro-processors)
+also come with a fixed \emph{instruction set}.
+These instructions are the only allowed elements in an
+\emph{assembly} code given to the processor. 
+Chips from different
+manufacturers typically have different instruction sets. 
+In the case of quantum computers, the different 
+\emph{qubit implementations} (superconducting qubits, atoms, ions)
+come likewise with different universal gate sets.
+Conversion rules exist to go from one to another.
 
-\paragraph{Usual gates} CNOT, H, rotations, T, S (Phase)... 
+\paragraph{Remark 2 - Usual gates} See Table~\ref{usual} for 
+a list of usual gates, that quantum computer scientists
+typically use to write quantum circuit (the notion defined
+in the next section). This set of usual gates
+was historically inspired both by what is possible in actual
+implementations and by what is \emph{practical} to use
+when designing quantum algorithms.
 
-\paragraph{Bell pair creation} H and then CNOT.
+\begin{center}
+    \begin{figure}
+    \includegraphics[width=\textwidth]{quantum_gates.pdf}
+    \caption{Some usual quantum gates.} 
+        \label{usual}
+    \end{figure}
+\end{center}
 
-\subsection{quantum circuit}
+\paragraph{Remark 3 - Physically} In practice, gates
+are implementing by transiently turning 
+\emph{Hamiltonian terms} on/off. Details
+depend on the qubit implementation.
 
-A quantum circuit is a sequence/list of gates, drawn from a given gate set. It is the quantum
-equivalent of Boolean circuits, with ``wires'' representing qubits, and gates as boxes
-applied to them.
+\subsection{Quantum circuits}
 
+\paragraph{Definition - Quantum circuit} A quantum
+circuit is a graphical reprentation for a list/sequence
+of quantum gates applied on $n$ qubits. As for
+Boolean circuits in the classical world,
+\emph{wires} represent qubits. They go through
+boxes representing gates.
 We typically refer to the number of gates in a quantum circuit as its \emph{size}
+
+\paragraph{Example - Bell pair creation} H and then CNOT:
+\begin{center}
+    \includegraphics[width=\textwidth]{bell_pair_creation.pdf}
+\end{center}
+The output state is $\frac{|0\rangle+|1\rangle}{\sqrt{2}}$
 
 \paragraph{Example of a fictional basic quantum circuit} and how it manipulates
 qbits. especially the tensor product operation
-
-\subsection{Implementations for qubits and quantum computers}
-
-\begin{itemize}
-    \item see slide, but overall:
-    \item superconducting qubits, ions, photons, semi-conductors.
-    \item from quantum circuit point of view: each of them comes with a universal \textbf{instruction set}
-    composed of local gates.
-    \item One might have to use conversion rul.es to go from one instruction set to another.
-\end{itemize}
 
 \subsection{Computational model - quantum speedup}
 
