@@ -129,35 +129,61 @@ We typically refer to the number of gates in a quantum circuit as its \emph{size
 \begin{center}
     \includegraphics[width=\textwidth]{bell_pair_creation.pdf}
 \end{center}
-The output state is $\frac{|0\rangle+|1\rangle}{\sqrt{2}}$
+The output state is $\frac{|00\rangle+|11\rangle}{\sqrt{2}}$, indeed:
+$$|00\rangle \xrightarrow[]{H\otimes I} \left(\frac{|0\rangle+|1\rangle}{\sqrt{2}}\right)\otimes |0\rangle 
+\xrightarrow[]{CNOT}\frac{|00\rangle+|11\rangle}{\sqrt{2}}$$
+or, in terms of amplitude state vector:
+$$ \begin{matrix}
+|00\rangle \\ |01\rangle \\ |10\rangle \\ |11\rangle
+\end{matrix}\begin{pmatrix}1 \\ 0 \\ 0 \\ 0\end{pmatrix} \xrightarrow[]{H\otimes I} \begin{pmatrix} 1/\sqrt{2} \\ 0 \\ 1/\sqrt{2} \\ 0 \end{pmatrix}
+\xrightarrow[]{CNOT} \begin{pmatrix}
+1/\sqrt{2} \\ 0 \\ 0 \\ 1/\sqrt{2}   
+\end{pmatrix}$$
+
+\paragraph{Remark 1 - usual gates} Note that in fact, in the usual gates we talked about,
+Hadamard is the only one able to create and destroy superpositions. The others either
+    only permute amplitudes ($CNOT$, Toffoli...) or add phases to certain states 
+    $T, CZ$...
 
 \paragraph{Example of a fictional basic quantum circuit} and how it manipulates
-qbits. especially the tensor product operation
+qbits:
+\begin{center}
+\includegraphics[width=.6\textwidth]{quantum_circuit_example.eps}
+\end{center}
+
+    Which corresponds to applying $V\cdot (W\otimes I) \cdot CNOT  \cdot (H\otimes I) $ onto 
+    $|00\rangle$ Before measuring.
 
 \subsection{Computational model - quantum speedup}
 
-\paragraph{quantum algorithm} The execution of a quantum circuit is the
+\paragraph{Definition - quantum circuit execution} The execution of a quantum circuit is the
 sequential application of all its gates on a quantum computer
 initialized at $|0...0\rangle$ followed by the measurement of all qubit.
 Intermediary measurements may also be applied, and condition the subsequent application
 of other gates. 
 
-\paragraph{classical complexity}
-We count the number of elementary operations and upper-bound them aymptotically 
+\paragraph{Reminder - classical complexity} The classical complexity of
+    a classical algorithm is an asymptotic upper bound\footnote{with $O(.)$} on the execution time
+involved in the algorithm, typically expressed
 as a function of the input size\footnote{number of vertices/edges if the input is a graph, 
 number of bits if the input is a number, number of elements if the input is a list...}.
+For instance, a typical complexity for a sorting algorithm for a list of length $n$
+is $O(n\cdot \log(n))$.
 
-\paragraph{quantum complexity} We look at the size of quantum circuits involved in
-quantum algorithms solving the problem, and asymptotically upperbound it as a function
-of the input size.
+\paragraph{Definition - quantum algorithmic complexity} Likewise, we look at the size of 
+quantum circuits involved in quantum algorithms solving a problem, 
+and asymptotically upperbound it as a function of the input size.
 
-\paragraph{poly-time quantum and poly-time classical} Poly-time quantum is therefore
+
+
+\paragraph{Remark - polynomial-time quantum and polynomial-time classical} Poly-time quantum is therefore
 defined in terms of poly-sized quantum circuits. Poly-time classical
 has been defined in vaguer terms here, but note that, up to theoretical
 subtleties beyond the scope of this lecture\footnote{circuit ``uniformity''
 }, classical poly-time complexity could be likewise defined in terms
 of Boolean circuit size complexity.
 
+\paragraph{Quantum algorithmics:}
 \begin{itemize}
 \item Informally, the question of quantum algorithmics is: which computational problem
 have a quantum complexity that is asymptotically better than the complexity
@@ -170,9 +196,12 @@ know) only exponential/super-polynomial classical algorithms ?
 
 \subsection{by hand example - Deutsch-Josza}
 
+\paragraph{Quantum oracles}
 From a classical circuit computing a Boolean function, it is fairly easy to get a reversible 
-circuit computing that function. From a reversible circuit, it is easy to get a quantum 
-version using Toffoli-s and CNOTs. This quantum version is usually an oracle, i.e. that does
+circuit computing that function.
+From a reversible circuit, it is easy to get a quantum 
+version using Toffoli-s and CNOTs. This quantum version is usually called an oracle,
+and acts as:
 $$|x\rangle|y\rangle\xrightarrow[O_f]{}|x\rangle|y\oplus f(x)\rangle$$.
 
 The Deutsch-Josza algorithm solves the following problem:\\
@@ -188,9 +217,7 @@ half of the entries plus 1, i.e. $2^{n-1}+1$ calls to $f$ at least.
 the circuit below.
 
 \begin{center}
-\begin{figure}
 \includegraphics[width=.6\textwidth]{deutsch_josza.pdf}
-\end{figure}
 \end{center}
 
 Let us walk through the steps of the algorithm for $n=1$.
@@ -227,9 +254,18 @@ and therefore $0$ is measured.
 &= |1\rangle\otimes\left(\frac{|b\rangle-|\overline{b}\rangle}{\sqrt{2}}\right)
 \end{align*}
 \end{itemize}
+
+By measuring the first qubit, we can decide between the two cases.
+In the general case, we measure the first $n$ qubits. If we get
+$|0...0\rangle$, the function is constant, else, it is balanced.
+
 \subsection{Quantum Fourier Transform}
 
-\paragraph{Definition} Looking a lot like a quantized version of the Fast Fourier Transform, the definition of the quantum Fourier
+Deutsch-Josza was a toy example, now we look at an important 
+building block for quantum algorithms (including Sh\"{o}r or
+algorithms for quantum chemistry).
+
+\paragraph{Definition - quantum Fourier transform} Looking a lot like a quantized version of the Fast Fourier Transform, the definition of the quantum Fourier
 transform is as such:
 $$ |j\rangle \xrightarrow[]{QFT} \frac{1}{\sqrt{2^n}} \sum_{k=0}^{2^n-1} e^{\frac{2i\pi jk}{2^n}} |k\rangle $$
 
@@ -266,6 +302,10 @@ Let us write:
 A state that is almost equal to what we want is $\left(H\otimes ... \otimes H\right) |0...0\rangle = \otimes_{l=0}^{n-1} \left(\frac{|0\rangle+|1\rangle}{\sqrt{2}}\right)$. From it, we need to apply a phase on qubit $l$ \emph{when it is equal to $1$ but not when it is equal to $0$.} We can do that with a controlled operation.
 
 We just need to apply $U^{2^j}$ on $|u\rangle$, controlled by qubit $j$.
+As in the circuit below:
+\begin{center}
+    \includegraphics[width=\textwidth]{quantum_phase_estimation.eps}
+\end{center}
 
 \subsection{Shor's algorithm and other period-finding algorithms}
 
@@ -278,8 +318,8 @@ $e^{\Theta(n^{1/3}\log^{2/3} n)}$. $\sim$ exponential in the number of bits of $
 \paragraph{Shor's algorithm} $O(poly(\log(n)))$
 
 \paragraph{classical part: reduction from factoring to order-finding}
-I don't know that part: but it reduces the problem to the computation
-of the period of $f_a(x)=a^x mod N$.
+Part not presented here: it reduces the problem to the computation
+of the period of $f_a(x)=a^x mod N$, for different values of $a$.
 
 \paragraph{quantum part: }
 \textbf{Input:} $f:\{0,1\}^{t}\rightarrow \{0,1\}^{p}$ s.t
@@ -294,7 +334,7 @@ Computation:
     |0_t\rangle|0_p\rangle &\xrightarrow[H]{} \frac{1}{\sqrt{2^t}} \sum_{x=0}^{2^t-1} |x\rangle|0_p\rangle \\
     &\xrightarrow[U]{} \frac{1}{\sqrt{2^t}}\sum_{x=0}^{2^t-1} |x\rangle|f(x)\rangle
 \end{align*}
-\textbf{Definition pause: } we introduce $$|\hat{f}(l)\rangle = \frac{1}{\sqrt{r}} \sum_{x=0}^{r-1} e^{\frac{2i\pi l x}{r}} |f(x)\rangle $$
+\textbf{Definition pause: } we introduce $$|\hat{f}(l)\rangle = \frac{1}{\sqrt{r}} \sum_{x=0}^{r-1} e^{-\frac{2i\pi l x}{r}} |f(x)\rangle $$
 for which the reverse formula is:
 $$|f(x)\rangle = \frac{1}{\sqrt{r}} \sum_{l=0}^{r} e^{\frac{2i\pi lx}{r}} |\hat{f}(l)\rangle  $$
 Thanks to: 
