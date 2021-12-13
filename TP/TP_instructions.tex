@@ -1,5 +1,6 @@
 \documentclass{article}
 
+\usepackage{cancel}
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{hyperref}
@@ -165,7 +166,9 @@ $$ Z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} $$
 $$ (A\otimes B)\cdot (C\otimes D) = AC\otimes BD $$
 
 $$ I\otimes A^{\dagger} = I^{\dagger}\otimes A^{\dagger} = 
-(A\otimes I)^{\dagger}   $$
+(I\otimes A)^{\dagger}   $$
+
+$$\cancel{(A\otimes I)^{\dagger}}  $$
 
 with $I$ the plain identity matrix.
 \subsection{matrix exponential}
@@ -176,9 +179,16 @@ e^{U^{\dagger}AU} &= \sum_{k=0}^{+\infty} \frac{(U^{\dagger}AU)^{k}}{k!} \\
 &= U^{\dagger}\sum_{k=0}^{+\infty} \frac{A^{k}}{k!}U \\ 
 &= U^{\dagger}e^{A}U \\ 
 \end{align*}
-
 This is what happens with $CNOT_{0\rightarrow 1}$
 in the example that is given.
+
+\begin{align*}
+    e^{-idt(I\otimes Z)} &= \sum_{k} \frac{(-idt)^k (I\otimes Z)^k }{k!} \\
+    &= \sum_{k} \frac{(-idt)^k (I\otimes Z^k) }{k!} \\
+    &= I \otimes \left(\sum_{k} \frac{(-idt)^k  Z^k }{k!} \right) \\
+    &= I \otimes RZ(2\cdot dt)
+\end{align*}
+
 
 \bibliography{biblio}
 \bibliographystyle{unsrt}

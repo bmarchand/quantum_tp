@@ -1,13 +1,17 @@
 FROM ubuntu:latest
 
-WORKDIR /notebooks
+RUN apt-get update && apt -y update
+RUN apt-get -y install python3.9-dev
+RUN apt-get -y install python3-pip
+RUN python3.9 -m pip install notebook
+RUN python3.9 -m pip install myqlm
+RUN apt -y install imagemagick
+RUN python3.9 -m qat.magics.install
 
-COPY minimal_notebook.ipynb ./notebooks
+RUN mkdir src
+WORKDIR src/
+COPY . .
 
-RUN apt-get update
-RUN apt-get -y install python3-dev python3-pip
-RUN pip3 install notebook
-RUN pip3 install myqlm
-RUN python3 -m qat.magics.install
+CMD ["cat","/etc/fstab"]
 
-CMD ["jupyter-notebook","--no-browser","--port","8080"]
+CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]

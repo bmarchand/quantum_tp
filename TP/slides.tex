@@ -21,8 +21,7 @@
 \begin{itemize}
 \item[1.] Some context with these slides.
 \item[2.] Installation problems ?
-\item[3.] Your turn. Fill the ``quantum\_tp\_pea.ipynb'' according to ``TP\_instructions.pdf''. You will find them in Teams: Files $\rightarrow$ 
-TP\_programmation $\rightarrow$ TP\_kit\_phase\_estimation 
+\item[3.] Your turn. Fill the ``quantum\_tp\_pea.ipynb'' according to ``TP\_instructions.pdf''. You will find them using the link in the email.
 \item[4.] Finish it and send it\footnote{the .ipynb file. Don't forget to save from time to time.} 
     by \textbf{next Friday, December $17^{th}$}.
 \item[5.] Two important keyboard short-cuts to know: Shift+Enter and Ctrl+Enter.
@@ -101,7 +100,7 @@ and other application contexts.\\
 \begin{frame}
 \frametitle{Iterative quantum phase estimation: what we will use}
 
-{\fontfamily{lmr}\selectfont for k in \textbf{range}($n_{B}$, 0, -1)\footnote{Python style}:
+{\fontfamily{lmr}\selectfont for k in \textbf{range}($n_{B}$, 0, -1)\footnote{Python style. The for loop is in decreasing order. Starting at $n_B$, ending at 1}:
 \begin{itemize}
 \item[1.] compute $\phi_{k}=2\pi\cdot\sum_{l=k+1}^{n_{B}} \frac{b_{l}}{2^{l-k+1}}$
 \item[2.] produce and execute the following circuit: 
