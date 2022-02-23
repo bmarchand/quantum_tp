@@ -1,0 +1,51 @@
+élève, note
+Ryan Maroc, A+
+Ambroise Boyer, A
+Anthony Correia, A++
+Elwyn Winkler, A
+Emmanuel Castiel,A
+Florien Nouboussi, C- (1)
+Maxime Culot, A+
+Salim Miklass, C- (1)
+Alice Marceau, A
+Carelle Keyrouz, A
+Antoine Cornillot, A
+Yannis Dahouani, A+
+Wassim Bourbia, A+
+Alexandre Journeaux, A++
+Jérémy Besson, A+
+Jérôme Kowalski, A-
+Léo Pugliese, A/A+
+Malo Joly, A
+Grégoire Pichard, B+
+Roy Eid, A
+Hatim Benchaaboun, B+
+Reem El Attar, A
+Thomas Sainrat, A
+Catherine Weng, B
+Thibaud Vendrely, B
+Victor Petit, A+
+Clément Poret, A+
+Enzo Merzoug, B-
+Valentine Maris, B-
+Mohamed Khelil, A
+Elio Garnaoui, A
+Marcelin Gallezot, B
+Mathieu Dessirier, A
+Sara Loucif, B
+Emilien Gadoux, B-
+Amelie Chies, A
+Arthur Amorim, A+++
+Pierre-Olivier Michel B
+Marouane Khlifa, B+
+Romain Gaudin, B+
+El Hadji Adama Seck, A
+Pierre Manchet, B+
+Nathanael Hulard, AS
+
+
+---
+
+(1): same TD.
+
+Non rendu: Alexis Koen, Juliette Plo (non-inscrite finalement), 
