@@ -1,0 +1,29 @@
+Purpose of the TP:
+	- understand the basics of QAOA
+	- understand the stakes of planarity, polynomiality, solving NP-hard problems, approximation algorithms
+	- see how you need some p to have enough degree of freedom
+	- see that on different graphs
+	- understand the link with adiabatic quantum computing and therefore smart initialization
+	
+Question 0:
+        - write in latex the Hamiltonian whose ground state is the encoding of the solution to maxcut
+
+Question 1:
+	- Given a graph, implement a brute force enumeration of states to find the best optimal value and best cut.
+
+Question 2:
+	- Implement a QAOA layer
+
+Question 3:
+	- Implement evaluate parameter
+	- 2.a: init, 2.b: layers, 2.c extracting average
+
+Question 4:
+	- Run the code, don't hesitate to play with different graphs.
+	- What p do we need to reach optimal on graph X ?
+	(Write it in notebook)
+	
+ Question 5:
+ 	- figure out smart initialization. Can you find a graph where it helps ?
+ 	
+ Graded. More points to more comments and explanations
