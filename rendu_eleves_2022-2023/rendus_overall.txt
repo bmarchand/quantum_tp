@@ -1,0 +1,42 @@
+name, tp1, tp2
+Jérémy Adjadj, ✓, ✓
+Thibaud Ardant, ✓, ✓
+Raphaël Ayache, ✓, ✓ 
+Malik Ayachi, ✓, ✓
+Mariem Bahri, ✓, ✓
+Lucien Belzane, ✓, ✓
+Adam Bensoubaya, ✓, ✓
+Lou Bernabeu, ✓, ✓
+Julien Berthomier, ✓, ✓
+Clément Besoin, ✓, ✓
+Antoine Bogenschutz, ✓, ✓
+Sophie Bravo, ✓, ✓
+Valentin Degand, ✓, ✓
+Virgin Durepaire, ✓, ✓
+Wissal Filali, ✓, ✓
+Louis Follet, ✓, ✓
+Mateo Guy, ✓, ✓
+Alendor Krasniqi, ✓, ✓
+Mal Landru, ✓, ✓
+Florian Lorin, ✓, ✓
+Vadym Lozovski, ✓, ✓
+Luca Mazzella, ✓, ✓
+Ian-Evan Michel, ✓, ✓
+Louis Milhamont, ✓, ✓
+Maxime Nurwubusa, ✓, ✓
+Jules Plaire, ✓, ✓
+Yann Portella, ✓, ✓
+Thomas Pousset, ✓, ✓
+Alexis Rosio, ✓, ✓
+Lilian Seyve, ✓, ✓
+Jolan Tissier, ✓, ✓
+Quentin Valnais, ✓, ✓ 
+Thibaut Vouillot, ✓, ✓
+Dechen Wang, ✓, ✓
+Théophile Willoquet, ✓, ✓
+Tong Zhu, ✓, ✓
+
+pas de rendus: Arnaud Petit ainsi que (ND) Matei Crudu, Okan Gungoroglu, 
+Nidel Dilan Tchoulayeu Possie, Chang Zhou et (CM) Carles Baptiste, 
+Huang Diancheng, Clothilde Lamirault, Owen Loison,
+Valentin Schmidt, Maxime Tomasian 
