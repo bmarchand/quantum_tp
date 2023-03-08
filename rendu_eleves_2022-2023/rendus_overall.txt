@@ -24,6 +24,7 @@ Luca Mazzella, ✓, ✓
 Ian-Evan Michel, ✓, ✓
 Louis Milhamont, ✓, ✓
 Maxime Nurwubusa, ✓, ✓
+Arnaud Petit, ✓, ✓
 Jules Plaire, ✓, ✓
 Yann Portella, ✓, ✓
 Thomas Pousset, ✓, ✓
@@ -36,7 +37,7 @@ Dechen Wang, ✓, ✓
 Théophile Willoquet, ✓, ✓
 Tong Zhu, ✓, ✓
 
-pas de rendus: Arnaud Petit ainsi que (ND) Matei Crudu, Okan Gungoroglu, 
-Nidel Dilan Tchoulayeu Possie, Chang Zhou et (CM) Carles Baptiste, 
+pas de rendus:Matei Crudu, Okan Gungoroglu, 
+Nidel Dilan Tchoulayeu Possie, Chang Zhou (ND) et Carles Baptiste, 
 Huang Diancheng, Clothilde Lamirault, Owen Loison,
-Valentin Schmidt, Maxime Tomasian 
+Valentin Schmidt, Maxime Tomasian (CM)

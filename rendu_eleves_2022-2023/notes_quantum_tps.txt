@@ -24,6 +24,7 @@ Luca Mazzella, 17, 17, 17
 Ian-Evan Michel, 16, 16, 16
 Louis Milhamont, 17, 17, 17
 Maxime Nurwubusa, 16, 15, 15.5
+Arnaud Petit, 16, 15, 15.5
 Jules Plaire, 14, 17, 15.5
 Yann Portella, 17, 18, 17.5
 Thomas Pousset, 16, 17, 16.5
