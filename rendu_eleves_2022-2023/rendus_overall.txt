@@ -4,6 +4,7 @@ Thibaud Ardant, ✓, ✓
 Raphaël Ayache, ✓, ✓ 
 Malik Ayachi, ✓, ✓
 Mariem Bahri, ✓, ✓
+Wafa Ballouch, ✓, ✓
 Lucien Belzane, ✓, ✓
 Adam Bensoubaya, ✓, ✓
 Lou Bernabeu, ✓, ✓
@@ -16,6 +17,7 @@ Virgin Durepaire, ✓, ✓
 Wissal Filali, ✓, ✓
 Louis Follet, ✓, ✓
 Mateo Guy, ✓, ✓
+Amel Kolli, ✓, ✓
 Alendor Krasniqi, ✓, ✓
 Mal Landru, ✓, ✓
 Florian Lorin, ✓, ✓

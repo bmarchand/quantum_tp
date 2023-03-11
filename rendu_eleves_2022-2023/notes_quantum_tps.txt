@@ -3,6 +3,7 @@ Jérémy Adjadj, 17, 18, 17.5
 Thibaud Ardant, 17, 15, 16
 Raphaël Ayache, 17, 18, 17.5
 Malik Ayachi, 17, 16, 16.5
+Wafa Ballouch, 16, 15, 15.5
 Mariem Bahri, 15, 13, 14
 Lucien Belzane, 17, 16, 16.5
 Adam Bensoubaya, 16, 13, 14.5
@@ -16,6 +17,7 @@ Virgin Durepaire, 17, 14, 15.5
 Wissal Filali, 16, 15, 15.5
 Louis Follet, 16, 16, 16
 Mateo Guy, 16, 13, 14.5
+Amel Kolli, 15, 16, 15.5
 Alendor Krasniqi, 16, 13, 14.5
 Mal Landru, 17, 19, 18
 Florian Lorin, 17, 16, 16.5
@@ -36,4 +38,3 @@ Thibaut Vouillot, 17, 14, 15.5
 Dechen Wang, 15, 16, 15.5
 Théophile Willoquet, 16, 13, 14.5
 Tong Zhu, 17, 16, 16.5
-
